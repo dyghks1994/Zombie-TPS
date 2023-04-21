@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_player_shooter_8cs" kind="file">
+    <compoundname>PlayerShooter.cs</compoundname>
+    <innerclass refid="class_player_shooter" prot="public">PlayerShooter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_player_shooter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_shooter" kindref="compound">PlayerShooter</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" kindref="member">AimState</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326ae599161956d626eda4cb0a5ffb85271c" kindref="member">Idle</ref>,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326ab38ad52317960916202adad641f41b37" kindref="member">HipFire</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" kindref="member">AimState</ref><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gun" kindref="compound">Gun</ref><sp/><ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>LayerMask<sp/><ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_player_input" kindref="compound">PlayerInput</ref><sp/><ref refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" kindref="member">playerInput</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Animator<sp/><ref refid="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" kindref="member">playerAnimator</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Camera<sp/><ref refid="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" kindref="member">playerCamera</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" kindref="member">waitingTimeForReleaseingAim</ref><sp/>=<sp/>2.5f;</highlight></codeline>
+<codeline lineno="22" refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" kindref="member">lastFireInputTime</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref>;</highlight></codeline>
+<codeline lineno="25" refid="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" kindref="member">linedUp</ref><sp/>=&gt;<sp/>!(Mathf.Abs(<sp/>playerCamera.transform.eulerAngles.y<sp/>-<sp/>transform.eulerAngles.y)<sp/>&gt;<sp/>1f);</highlight></codeline>
+<codeline lineno="26" refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" kindref="member">hasEnoughDistance</ref><sp/>=&gt;<sp/>!Physics.Linecast(transform.position<sp/>+<sp/>Vector3.up<sp/>*<sp/>gun.fireTransform.position.y,gun.fireTransform.position,<sp/>~<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="class_player_shooter_1a48c91fee7af23520468c4ccc7391036c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a48c91fee7af23520468c4ccc7391036c" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref><sp/>!=<sp/>(<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref><sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>gameObject.layer)))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref><sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>gameObject.layer;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" kindref="member">playerCamera</ref><sp/>=<sp/>Camera.main;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" kindref="member">playerInput</ref><sp/>=<sp/>GetComponent&lt;PlayerInput&gt;();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" kindref="member">playerAnimator</ref><sp/>=<sp/>GetComponent&lt;Animator&gt;();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_player_shooter_1a25bc0d255416f7ef794751dd0fa10256" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a25bc0d255416f7ef794751dd0fa10256" kindref="member">OnEnable</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>=<sp/>AimState.Idle;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gun.gameObject.SetActive(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gun.Setup(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_player_shooter_1a6cdfba8fa537b800b23595ef2132500d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a6cdfba8fa537b800b23595ef2132500d" kindref="member">OnDisable</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>=<sp/>AimState.Idle;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gun.gameObject.SetActive(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" kindref="member">FixedUpdate</ref>()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" kindref="member">playerInput</ref>.<ref refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" kindref="member">fire</ref>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" kindref="member">lastFireInputTime</ref><sp/>=<sp/>Time.time;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" kindref="member">Shoot</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" kindref="member">playerInput</ref>.<ref refid="class_player_input_1a02e0669200b02197394bddc68bfc8d9a" kindref="member">reload</ref>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" kindref="member">Reload</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" kindref="member">UpdateAimTarget</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>angle<sp/>=<sp/>playerCamera.transform.eulerAngles.x;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(angle<sp/>&gt;<sp/>270f)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle<sp/>-=<sp/>360f;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle<sp/>=<sp/>angle<sp/>/<sp/>-180f<sp/>+<sp/>0.5f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetFloat(</highlight><highlight class="stringliteral">&quot;Angle&quot;</highlight><highlight class="normal">,<sp/>angle);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" kindref="member">playerInput</ref>.<ref refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" kindref="member">fire</ref><sp/>&amp;&amp;<sp/>Time.time<sp/>&gt;=<sp/><ref refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" kindref="member">lastFireInputTime</ref><sp/>+<sp/><ref refid="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" kindref="member">waitingTimeForReleaseingAim</ref>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>=<sp/>AimState.Idle;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" kindref="member">UpdateUI</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" kindref="member">Shoot</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>==<sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" kindref="member">AimState</ref>.Idle)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" kindref="member">linedUp</ref>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>=<sp/>AimState.HipFire;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>==<sp/><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" kindref="member">AimState</ref>.HipFire)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" kindref="member">hasEnoughDistance</ref>)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>.<ref refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" kindref="member">Fire</ref>(<ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref>))</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetTrigger(</highlight><highlight class="stringliteral">&quot;Shoot&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" kindref="member">aimState</ref><sp/>=<sp/>AimState.Idle;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" kindref="member">Reload</ref>()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>.<ref refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" kindref="member">Reload</ref>())</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetTrigger(</highlight><highlight class="stringliteral">&quot;Reload&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" kindref="member">UpdateAimTarget</ref>()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RaycastHit<sp/>hit;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>ray<sp/>=<sp/>playerCamera.ViewportPointToRay(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(0.5f,<sp/>0.5f,<sp/>0f));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Physics.Raycast(ray,<sp/>out<sp/>hit,<sp/><ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>.<ref refid="class_gun_1a2f24745a0810a937385acf841a23b66b" kindref="member">fireDistance</ref>,<sp/>~<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref>))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref><sp/>=<sp/>hit.point;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Physics.Linecast(<ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>.<ref refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" kindref="member">fireTransform</ref>.position,<sp/>hit.point,<sp/>out<sp/>hit,<sp/>~<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref>))</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref><sp/>=<sp/>hit.point;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref><sp/>=<sp/>playerCamera.transform.position<sp/>+<sp/>playerCamera.transform.forward<sp/>*<sp/>gun.fireDistance;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" kindref="member">UpdateUI</ref>()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref><sp/>==<sp/>null<sp/>||<sp/><ref refid="class_u_i_manager" kindref="compound">UIManager</ref>.<ref refid="class_u_i_manager_1a006246dc7fcecbe2387d70731191d4f6" kindref="member">Instance</ref><sp/>==<sp/>null)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIManager.Instance.UpdateAmmoText(gun.magAmmo,<sp/>gun.ammoRemain);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIManager.Instance.SetActiveCrosshair(<ref refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" kindref="member">hasEnoughDistance</ref>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIManager.Instance.UpdateCrossHairPosition(<ref refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" kindref="member">aimPoint</ref>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" kindref="member">OnAnimatorIK</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>layerIndex)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref><sp/>==<sp/>null<sp/>||<sp/><ref refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" kindref="member">gun</ref>.<ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>==<sp/><ref refid="class_gun" kindref="compound">Gun</ref>.<ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref>.Reloading)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetIKPositionWeight(AvatarIKGoal.LeftHand,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetIKRotationWeight(AvatarIKGoal.LeftHand,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetIKPosition(AvatarIKGoal.LeftHand,<sp/>gun.leftHandMount.position);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerAnimator.SetIKRotation(AvatarIKGoal.LeftHand,<sp/>gun.leftHandMount.rotation);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs"/>
+  </compounddef>
+</doxygen>

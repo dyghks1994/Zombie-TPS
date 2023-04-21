@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_utility" kind="class" prot="public">
+    <compoundname>Utility</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_utility_1a09d967dcf27910efdd9655863fddaf3a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>static Vector3 Utility.GetRandomPointOnNavMesh</definition>
+        <argsstring>(Vector3 center, float distance, int areaMask)</argsstring>
+        <name>GetRandomPointOnNavMesh</name>
+        <param>
+          <type>Vector3</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>areaMask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" bodystart="6" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utility_1a0e04690c79fbcb8702a13c994d01b4b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float Utility.GedRandomNormalDistribution</definition>
+        <argsstring>(float mean, float standard)</argsstring>
+        <name>GedRandomNormalDistribution</name>
+        <param>
+          <type>float</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>standard</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" line="17" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Utility.cs" bodystart="4" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_utility_1a0e04690c79fbcb8702a13c994d01b4b0" prot="public" virt="non-virtual"><scope>Utility</scope><name>GedRandomNormalDistribution</name></member>
+      <member refid="class_utility_1a09d967dcf27910efdd9655863fddaf3a" prot="public" virt="non-virtual"><scope>Utility</scope><name>GetRandomPointOnNavMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

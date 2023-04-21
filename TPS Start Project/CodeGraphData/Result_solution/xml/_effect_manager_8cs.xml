@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_effect_manager_8cs" kind="file">
+    <compoundname>EffectManager.cs</compoundname>
+    <innerclass refid="class_effect_manager" prot="public">EffectManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_effect_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_effect_manager" kindref="compound">EffectManager</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_effect_manager" kindref="compound">EffectManager</ref><sp/><ref refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" kindref="member">m_Instance</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_effect_manager" kindref="compound">EffectManager</ref><sp/><ref refid="class_effect_manager_1a70e6a751653a5a515397763c4624bc68" kindref="member">Instance</ref></highlight></codeline>
+<codeline lineno="7" refid="class_effect_manager_1a70e6a751653a5a515397763c4624bc68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" kindref="member">m_Instance</ref><sp/>==<sp/>null)<sp/><ref refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" kindref="member">m_Instance</ref><sp/>=<sp/>FindObjectOfType&lt;EffectManager&gt;();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" kindref="member">m_Instance</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" kindref="member">EffectType</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79ad13bc5b68b2bd9e18f29777db17cc563" kindref="member">Common</ref>,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79a76b3600561b0723b1634aeac8e29d2f9" kindref="member">Flesh</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ParticleSystem<sp/><ref refid="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" kindref="member">commonHitEffectPrefab</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ParticleSystem<sp/><ref refid="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" kindref="member">fleshHitEffectPrefab</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" kindref="member">PlayHitEffect</ref>(Vector3<sp/>pos,<sp/>Vector3<sp/>normal,<sp/>Transform<sp/>parent<sp/>=<sp/>null,<sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" kindref="member">EffectType</ref><sp/>effectType<sp/>=<sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" kindref="member">EffectType</ref>.Common)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>targetPrefab<sp/>=<sp/><ref refid="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" kindref="member">commonHitEffectPrefab</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(effectType<sp/>==<sp/><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" kindref="member">EffectType</ref>.Flesh)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetPrefab<sp/>=<sp/><ref refid="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" kindref="member">fleshHitEffectPrefab</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>effect<sp/>=<sp/>Instantiate(targetPrefab,<sp/>pos,<sp/>Quaternion.LookRotation(normal));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(parent<sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>effect.transform.SetParent(parent);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>effect.Play();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs"/>
+  </compounddef>
+</doxygen>

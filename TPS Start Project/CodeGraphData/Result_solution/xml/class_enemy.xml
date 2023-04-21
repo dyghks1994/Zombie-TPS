@@ -1,0 +1,737 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_enemy" kind="class" prot="public">
+    <compoundname>Enemy</compoundname>
+    <basecompoundref refid="class_living_entity" prot="public" virt="non-virtual">LivingEntity</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_enemy_1a3c350831a87aeda91560f2a7e7fd654f" prot="private" static="no">
+        <name>State</name>
+        <enumvalue id="class_enemy_1a3c350831a87aeda91560f2a7e7fd654fadf7a8712303eeadde5d19f0e2955085c" prot="public">
+          <name>Patrol</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_enemy_1a3c350831a87aeda91560f2a7e7fd654fa2205dc082ba550b67ad71e3e2241d9a6" prot="public">
+          <name>Tracking</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_enemy_1a3c350831a87aeda91560f2a7e7fd654fad834f5dc96e21a7b0b98f5ef43961d2c" prot="public">
+          <name>AttackBegin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_enemy_1a3c350831a87aeda91560f2a7e7fd654fa8abd002ea36128383f3269de7e74039b" prot="public">
+          <name>Attacking</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="13" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="12" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_enemy_1a3c350831a87aeda91560f2a7e7fd654f" kindref="member">State</ref></type>
+        <definition>State Enemy.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="20" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aef269ec3d042cb18293a38d8e61e3f43" compoundref="_enemy_8cs" startline="264" endline="270">BeginAttack</referencedby>
+        <referencedby refid="class_enemy_1a3535068d19c60b70a2bef12dca235af2" compoundref="_enemy_8cs" startline="279" endline="293">DisableAttack</referencedby>
+        <referencedby refid="class_enemy_1a1b7ce0b63593a8961c54e380e566f130" compoundref="_enemy_8cs" startline="272" endline="277">EnableAttack</referencedby>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+        <referencedby refid="class_enemy_1a80560cd7c04c1c0846715740bad699d1" compoundref="_enemy_8cs" startline="115" endline="135">Update</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a945192ab3b423160afe30162dfd549f8" prot="private" static="no" mutable="no">
+        <type>NavMeshAgent</type>
+        <definition>NavMeshAgent Enemy.agent</definition>
+        <argsstring></argsstring>
+        <name>agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="22" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1af0e13cdfe202cae228268acaaca26357" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator Enemy.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="23" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1aebad3939639e8243e611c5fef313250b" prot="private" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource Enemy.audioPlayer</definition>
+        <argsstring></argsstring>
+        <name>audioPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="28" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a9453eb4478d1584537e56e7ed9f2c2ba" prot="private" static="no" mutable="no">
+        <type>Renderer</type>
+        <definition>Renderer Enemy.skinRenderer</definition>
+        <argsstring></argsstring>
+        <name>skinRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="32" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a09dc61bbd4ffbc77c3ab2ea1dd1f351d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.turnSmoothVelocity</definition>
+        <argsstring></argsstring>
+        <name>turnSmoothVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="36" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a47ad6349a502a24150706eeaf08782a5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.attackDistance</definition>
+        <argsstring></argsstring>
+        <name>attackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="40" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+        <referencedby refid="class_enemy_1a80560cd7c04c1c0846715740bad699d1" compoundref="_enemy_8cs" startline="115" endline="135">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a528ea493f4f506d3ff5c5ec157a3cf70" prot="private" static="no" mutable="no">
+        <type>RaycastHit[]</type>
+        <definition>RaycastHit [] Enemy.hits</definition>
+        <argsstring></argsstring>
+        <name>hits</name>
+        <initializer>= new RaycastHit[10]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="50" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a9c7ccc49a4e45049ea58a27390938090" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_living_entity" kindref="compound">LivingEntity</ref> &gt;</type>
+        <definition>List&lt;LivingEntity&gt; Enemy.lastAttackedTargets</definition>
+        <argsstring></argsstring>
+        <name>lastAttackedTargets</name>
+        <initializer>= new List&lt;<ref refid="class_living_entity" kindref="compound">LivingEntity</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="51" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a79f227788652fb0f019c31c0c7c3882c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enemy.hasTarget</definition>
+        <argsstring></argsstring>
+        <name>hasTarget</name>
+        <initializer>=&gt; <ref refid="class_enemy_1a093d63a370aa5f55604822dd34a24688" kindref="member">targetEntity</ref> != null &amp;&amp; !targetEntity.dead</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="53" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a3535068d19c60b70a2bef12dca235af2" compoundref="_enemy_8cs" startline="279" endline="293">DisableAttack</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_enemy_1abe74621ee3298d84d9aba726d265519f" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Enemy.attackRoot</definition>
+        <argsstring></argsstring>
+        <name>attackRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1ac064f46fac9a9ebb94d3b49834bfaf30" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Enemy.eyeTransform</definition>
+        <argsstring></argsstring>
+        <name>eyeTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="26" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" compoundref="_enemy_8cs" startline="295" endline="318">IsTargetOnSight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a24059e25c4470f6c9d5d3138d44d9858" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip Enemy.hitClip</definition>
+        <argsstring></argsstring>
+        <name>hitClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="29" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7" compoundref="_enemy_8cs" startline="248" endline="262">ApplyDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a16f1d5bccbc2a286c8d863e4b7fd3d38" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip Enemy.deathClip</definition>
+        <argsstring></argsstring>
+        <name>deathClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="30" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_enemy_1ae71b48d5709827e50cb72ebeaf676ca8" compoundref="_enemy_8cs" startline="320" endline="332">Die</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a55cc5e94f438ea65364cf36a7fa7e85d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.runSpeed</definition>
+        <argsstring></argsstring>
+        <name>runSpeed</name>
+        <initializer>= 10f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="34" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" compoundref="_enemy_8cs" startline="94" endline="108">Setup</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1ae418cf16ea47a50323c6a3fe33229f02" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.turnSmoothTime</definition>
+        <argsstring></argsstring>
+        <name>turnSmoothTime</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="35" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a87e7b0f8b083361e9f0895cf55de0d6b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <initializer>= 30f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="38" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+        <referencedby refid="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" compoundref="_enemy_8cs" startline="94" endline="108">Setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a4f3f210e5f06a80fece95dc5bc029aab" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.attackRadius</definition>
+        <argsstring></argsstring>
+        <name>attackRadius</name>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="39" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1aa5634b613d4db2671ee056d8d57cb43e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.fieldOfView</definition>
+        <argsstring></argsstring>
+        <name>fieldOfView</name>
+        <initializer>= 50f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="42" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" compoundref="_enemy_8cs" startline="295" endline="318">IsTargetOnSight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a1e3c867cd62062f40cd6869f3f641e26" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.viewDistance</definition>
+        <argsstring></argsstring>
+        <name>viewDistance</name>
+        <initializer>= 10f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="43" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" compoundref="_enemy_8cs" startline="295" endline="318">IsTargetOnSight</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a1c6316c40587212d380df67da0c52c5b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy.patrolSpeed</definition>
+        <argsstring></argsstring>
+        <name>patrolSpeed</name>
+        <initializer>= 3f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="44" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_enemy_1aa76875cc2e42cd061763787b373512af" compoundref="_enemy_8cs" startline="79" endline="92">Awake</referencedby>
+        <referencedby refid="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" compoundref="_enemy_8cs" startline="94" endline="108">Setup</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a093d63a370aa5f55604822dd34a24688" prot="public" static="no" mutable="no">
+        <type><ref refid="class_living_entity" kindref="compound">LivingEntity</ref></type>
+        <definition>LivingEntity Enemy.targetEntity</definition>
+        <argsstring></argsstring>
+        <name>targetEntity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="46" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7" compoundref="_enemy_8cs" startline="248" endline="262">ApplyDamage</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1ab6b18cf94d5a39e0b6a46d9afb4576da" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Enemy.whatIsTarget</definition>
+        <argsstring></argsstring>
+        <name>whatIsTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="47" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">FixedUpdate</referencedby>
+        <referencedby refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" compoundref="_enemy_8cs" startline="295" endline="318">IsTargetOnSight</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enemy_1aa76875cc2e42cd061763787b373512af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="79" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="79" bodyend="92"/>
+        <references refid="class_enemy_1a945192ab3b423160afe30162dfd549f8" compoundref="_enemy_8cs" startline="22">agent</references>
+        <references refid="class_enemy_1af0e13cdfe202cae228268acaaca26357" compoundref="_enemy_8cs" startline="23">animator</references>
+        <references refid="class_enemy_1a47ad6349a502a24150706eeaf08782a5" compoundref="_enemy_8cs" startline="40">attackDistance</references>
+        <references refid="class_enemy_1a4f3f210e5f06a80fece95dc5bc029aab" compoundref="_enemy_8cs" startline="39">attackRadius</references>
+        <references refid="class_enemy_1aebad3939639e8243e611c5fef313250b" compoundref="_enemy_8cs" startline="28">audioPlayer</references>
+        <references refid="class_enemy_1a1c6316c40587212d380df67da0c52c5b" compoundref="_enemy_8cs" startline="44">patrolSpeed</references>
+        <references refid="class_enemy_1a9453eb4478d1584537e56e7ed9f2c2ba" compoundref="_enemy_8cs" startline="32">skinRenderer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ae3442338205f74a157f1a311640e84eb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="110" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="110" bodyend="113"/>
+        <references refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a80560cd7c04c1c0846715740bad699d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="115" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="115" bodyend="135"/>
+        <references refid="class_enemy_1a47ad6349a502a24150706eeaf08782a5" compoundref="_enemy_8cs" startline="40">attackDistance</references>
+        <references refid="class_enemy_1aef269ec3d042cb18293a38d8e61e3f43" compoundref="_enemy_8cs" startline="264" endline="270">BeginAttack</references>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">LivingEntity.dead</references>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1af061b512970e551024405942104355e2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="137" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="137" bodyend="192"/>
+        <references refid="class_enemy_1a4f3f210e5f06a80fece95dc5bc029aab" compoundref="_enemy_8cs" startline="39">attackRadius</references>
+        <references refid="class_enemy_1a87e7b0f8b083361e9f0895cf55de0d6b" compoundref="_enemy_8cs" startline="38">damage</references>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">LivingEntity.dead</references>
+        <references refid="class_enemy_1a528ea493f4f506d3ff5c5ec157a3cf70" compoundref="_enemy_8cs" startline="50">hits</references>
+        <references refid="class_enemy_1a9c7ccc49a4e45049ea58a27390938090" compoundref="_enemy_8cs" startline="51">lastAttackedTargets</references>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+        <references refid="class_enemy_1ae418cf16ea47a50323c6a3fe33229f02" compoundref="_enemy_8cs" startline="35">turnSmoothTime</references>
+        <references refid="class_enemy_1a09dc61bbd4ffbc77c3ab2ea1dd1f351d" compoundref="_enemy_8cs" startline="36">turnSmoothVelocity</references>
+        <references refid="class_enemy_1ab6b18cf94d5a39e0b6a46d9afb4576da" compoundref="_enemy_8cs" startline="47">whatIsTarget</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Enemy.UpdatePath</definition>
+        <argsstring>()</argsstring>
+        <name>UpdatePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="194" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="194" bodyend="246"/>
+        <references refid="class_enemy_1a945192ab3b423160afe30162dfd549f8" compoundref="_enemy_8cs" startline="22">agent</references>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">LivingEntity.dead</references>
+        <references refid="class_enemy_1a79f227788652fb0f019c31c0c7c3882c" compoundref="_enemy_8cs" startline="53">hasTarget</references>
+        <references refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" compoundref="_enemy_8cs" startline="295" endline="318">IsTargetOnSight</references>
+        <references refid="class_enemy_1a1c6316c40587212d380df67da0c52c5b" compoundref="_enemy_8cs" startline="44">patrolSpeed</references>
+        <references refid="class_enemy_1a55cc5e94f438ea65364cf36a7fa7e85d" compoundref="_enemy_8cs" startline="34">runSpeed</references>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+        <references refid="class_enemy_1a093d63a370aa5f55604822dd34a24688" compoundref="_enemy_8cs" startline="46">targetEntity</references>
+        <references refid="class_enemy_1a1e3c867cd62062f40cd6869f3f641e26" compoundref="_enemy_8cs" startline="43">viewDistance</references>
+        <references refid="class_enemy_1ab6b18cf94d5a39e0b6a46d9afb4576da" compoundref="_enemy_8cs" startline="47">whatIsTarget</references>
+        <referencedby refid="class_enemy_1ae3442338205f74a157f1a311640e84eb" compoundref="_enemy_8cs" startline="110" endline="113">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Enemy.IsTargetOnSight</definition>
+        <argsstring>(Transform target)</argsstring>
+        <name>IsTargetOnSight</name>
+        <param>
+          <type>Transform</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="295" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="295" bodyend="318"/>
+        <references refid="class_enemy_1ac064f46fac9a9ebb94d3b49834bfaf30" compoundref="_enemy_8cs" startline="26">eyeTransform</references>
+        <references refid="class_enemy_1aa5634b613d4db2671ee056d8d57cb43e" compoundref="_enemy_8cs" startline="42">fieldOfView</references>
+        <references refid="class_enemy_1a1e3c867cd62062f40cd6869f3f641e26" compoundref="_enemy_8cs" startline="43">viewDistance</references>
+        <references refid="class_enemy_1ab6b18cf94d5a39e0b6a46d9afb4576da" compoundref="_enemy_8cs" startline="47">whatIsTarget</references>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">UpdatePath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.Setup</definition>
+        <argsstring>(float health, float damage, float runSpeed, float patrolSpeed, Color skinColor)</argsstring>
+        <name>Setup</name>
+        <param>
+          <type>float</type>
+          <declname>health</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>damage</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>runSpeed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>patrolSpeed</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>skinColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="94" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="94" bodyend="108"/>
+        <references refid="class_enemy_1a87e7b0f8b083361e9f0895cf55de0d6b" compoundref="_enemy_8cs" startline="38">damage</references>
+        <references refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" compoundref="_living_entity_8cs" startline="7">LivingEntity.health</references>
+        <references refid="class_enemy_1a1c6316c40587212d380df67da0c52c5b" compoundref="_enemy_8cs" startline="44">patrolSpeed</references>
+        <references refid="class_enemy_1a55cc5e94f438ea65364cf36a7fa7e85d" compoundref="_enemy_8cs" startline="34">runSpeed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Enemy.ApplyDamage</definition>
+        <argsstring>(DamageMessage damageMessage)</argsstring>
+        <name>ApplyDamage</name>
+        <reimplements refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404">ApplyDamage</reimplements>
+        <param>
+          <type><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref></type>
+          <declname>damageMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="248" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="248" bodyend="262"/>
+        <references refid="class_enemy_1a24059e25c4470f6c9d5d3138d44d9858" compoundref="_enemy_8cs" startline="29">hitClip</references>
+        <references refid="class_enemy_1a093d63a370aa5f55604822dd34a24688" compoundref="_enemy_8cs" startline="46">targetEntity</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1aef269ec3d042cb18293a38d8e61e3f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.BeginAttack</definition>
+        <argsstring>()</argsstring>
+        <name>BeginAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="264" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="264" bodyend="270"/>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+        <referencedby refid="class_enemy_1a80560cd7c04c1c0846715740bad699d1" compoundref="_enemy_8cs" startline="115" endline="135">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a1b7ce0b63593a8961c54e380e566f130" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.EnableAttack</definition>
+        <argsstring>()</argsstring>
+        <name>EnableAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="272" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="272" bodyend="277"/>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a3535068d19c60b70a2bef12dca235af2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy.DisableAttack</definition>
+        <argsstring>()</argsstring>
+        <name>DisableAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="279" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="279" bodyend="293"/>
+        <references refid="class_enemy_1a79f227788652fb0f019c31c0c7c3882c" compoundref="_enemy_8cs" startline="53">hasTarget</references>
+        <references refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" compoundref="_enemy_8cs" startline="20">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ae71b48d5709827e50cb72ebeaf676ca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Enemy.Die</definition>
+        <argsstring>()</argsstring>
+        <name>Die</name>
+        <reimplements refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d">Die</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="320" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="320" bodyend="332"/>
+        <references refid="class_enemy_1a16f1d5bccbc2a286c8d863e4b7fd3d38" compoundref="_enemy_8cs" startline="30">deathClip</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="25">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>targetEntity</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="29">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" line="11" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Enemy.cs" bodystart="10" bodyend="333"/>
+    <listofallmembers>
+      <member refid="class_enemy_1a945192ab3b423160afe30162dfd549f8" prot="private" virt="non-virtual"><scope>Enemy</scope><name>agent</name></member>
+      <member refid="class_enemy_1af0e13cdfe202cae228268acaaca26357" prot="private" virt="non-virtual"><scope>Enemy</scope><name>animator</name></member>
+      <member refid="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7" prot="public" virt="virtual"><scope>Enemy</scope><name>ApplyDamage</name></member>
+      <member refid="class_enemy_1a47ad6349a502a24150706eeaf08782a5" prot="private" virt="non-virtual"><scope>Enemy</scope><name>attackDistance</name></member>
+      <member refid="class_enemy_1a4f3f210e5f06a80fece95dc5bc029aab" prot="public" virt="non-virtual"><scope>Enemy</scope><name>attackRadius</name></member>
+      <member refid="class_enemy_1abe74621ee3298d84d9aba726d265519f" prot="public" virt="non-virtual"><scope>Enemy</scope><name>attackRoot</name></member>
+      <member refid="class_enemy_1aebad3939639e8243e611c5fef313250b" prot="private" virt="non-virtual"><scope>Enemy</scope><name>audioPlayer</name></member>
+      <member refid="class_enemy_1aa76875cc2e42cd061763787b373512af" prot="private" virt="non-virtual"><scope>Enemy</scope><name>Awake</name></member>
+      <member refid="class_enemy_1aef269ec3d042cb18293a38d8e61e3f43" prot="public" virt="non-virtual"><scope>Enemy</scope><name>BeginAttack</name></member>
+      <member refid="class_enemy_1a87e7b0f8b083361e9f0895cf55de0d6b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>damage</name></member>
+      <member refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" prot="public" virt="non-virtual"><scope>Enemy</scope><name>dead</name></member>
+      <member refid="class_enemy_1a16f1d5bccbc2a286c8d863e4b7fd3d38" prot="public" virt="non-virtual"><scope>Enemy</scope><name>deathClip</name></member>
+      <member refid="class_enemy_1ae71b48d5709827e50cb72ebeaf676ca8" prot="public" virt="virtual"><scope>Enemy</scope><name>Die</name></member>
+      <member refid="class_enemy_1a3535068d19c60b70a2bef12dca235af2" prot="public" virt="non-virtual"><scope>Enemy</scope><name>DisableAttack</name></member>
+      <member refid="class_enemy_1a1b7ce0b63593a8961c54e380e566f130" prot="public" virt="non-virtual"><scope>Enemy</scope><name>EnableAttack</name></member>
+      <member refid="class_enemy_1ac064f46fac9a9ebb94d3b49834bfaf30" prot="public" virt="non-virtual"><scope>Enemy</scope><name>eyeTransform</name></member>
+      <member refid="class_enemy_1aa5634b613d4db2671ee056d8d57cb43e" prot="public" virt="non-virtual"><scope>Enemy</scope><name>fieldOfView</name></member>
+      <member refid="class_enemy_1af061b512970e551024405942104355e2" prot="private" virt="non-virtual"><scope>Enemy</scope><name>FixedUpdate</name></member>
+      <member refid="class_enemy_1a79f227788652fb0f019c31c0c7c3882c" prot="private" virt="non-virtual"><scope>Enemy</scope><name>hasTarget</name></member>
+      <member refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" prot="public" virt="non-virtual"><scope>Enemy</scope><name>health</name></member>
+      <member refid="class_enemy_1a24059e25c4470f6c9d5d3138d44d9858" prot="public" virt="non-virtual"><scope>Enemy</scope><name>hitClip</name></member>
+      <member refid="class_enemy_1a528ea493f4f506d3ff5c5ec157a3cf70" prot="private" virt="non-virtual"><scope>Enemy</scope><name>hits</name></member>
+      <member refid="class_living_entity_1ab63e59212312f3cce1d8f9cb8def9261" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>IsInvulnerabe</name></member>
+      <member refid="class_enemy_1aa4ea996d9cb5d31dd044100e72bd7058" prot="private" virt="non-virtual"><scope>Enemy</scope><name>IsTargetOnSight</name></member>
+      <member refid="class_enemy_1a9c7ccc49a4e45049ea58a27390938090" prot="private" virt="non-virtual"><scope>Enemy</scope><name>lastAttackedTargets</name></member>
+      <member refid="class_living_entity_1ab34d711915273ab0e68f7db26c23a398" prot="public" virt="non-virtual"><scope>Enemy</scope><name>OnDeath</name></member>
+      <member refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274" prot="protected" virt="virtual"><scope>Enemy</scope><name>OnEnable</name></member>
+      <member refid="class_enemy_1a1c6316c40587212d380df67da0c52c5b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>patrolSpeed</name></member>
+      <member refid="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255" prot="public" virt="virtual"><scope>Enemy</scope><name>RestoreHealth</name></member>
+      <member refid="class_enemy_1a55cc5e94f438ea65364cf36a7fa7e85d" prot="public" virt="non-virtual"><scope>Enemy</scope><name>runSpeed</name></member>
+      <member refid="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Setup</name></member>
+      <member refid="class_enemy_1a9453eb4478d1584537e56e7ed9f2c2ba" prot="private" virt="non-virtual"><scope>Enemy</scope><name>skinRenderer</name></member>
+      <member refid="class_enemy_1ae3442338205f74a157f1a311640e84eb" prot="private" virt="non-virtual"><scope>Enemy</scope><name>Start</name></member>
+      <member refid="class_living_entity_1af3889cf8afaf8ef2f3732c7ecfc66333" prot="public" virt="non-virtual"><scope>Enemy</scope><name>startingHealth</name></member>
+      <member refid="class_enemy_1a9e88ca2d0b35a27c5f984a554cffb4c0" prot="private" virt="non-virtual"><scope>Enemy</scope><name>state</name></member>
+      <member refid="class_enemy_1a3c350831a87aeda91560f2a7e7fd654f" prot="private" virt="non-virtual"><scope>Enemy</scope><name>State</name></member>
+      <member refid="class_enemy_1a093d63a370aa5f55604822dd34a24688" prot="public" virt="non-virtual"><scope>Enemy</scope><name>targetEntity</name></member>
+      <member refid="class_enemy_1ae418cf16ea47a50323c6a3fe33229f02" prot="public" virt="non-virtual"><scope>Enemy</scope><name>turnSmoothTime</name></member>
+      <member refid="class_enemy_1a09dc61bbd4ffbc77c3ab2ea1dd1f351d" prot="private" virt="non-virtual"><scope>Enemy</scope><name>turnSmoothVelocity</name></member>
+      <member refid="class_enemy_1a80560cd7c04c1c0846715740bad699d1" prot="private" virt="non-virtual"><scope>Enemy</scope><name>Update</name></member>
+      <member refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" prot="private" virt="non-virtual"><scope>Enemy</scope><name>UpdatePath</name></member>
+      <member refid="class_enemy_1a1e3c867cd62062f40cd6869f3f641e26" prot="public" virt="non-virtual"><scope>Enemy</scope><name>viewDistance</name></member>
+      <member refid="class_enemy_1ab6b18cf94d5a39e0b6a46d9afb4576da" prot="public" virt="non-virtual"><scope>Enemy</scope><name>whatIsTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_damageable" kind="interface" prot="public">
+    <compoundname>IDamageable</compoundname>
+    <derivedcompoundref refid="class_living_entity" prot="public" virt="non-virtual">LivingEntity</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_damageable_1a3a89527c02a36ca98c7670347f257fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IDamageable.ApplyDamage</definition>
+        <argsstring>(DamageMessage damageMessage)</argsstring>
+        <name>ApplyDamage</name>
+        <reimplementedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404">ApplyDamage</reimplementedby>
+        <reimplementedby refid="class_player_health_1a4228f31e483be291a63841d9a59b057c">ApplyDamage</reimplementedby>
+        <reimplementedby refid="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7">ApplyDamage</reimplementedby>
+        <param>
+          <type><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref></type>
+          <declname>damageMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/IDamageable.cs" line="3" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>PlayerHealth</label>
+        <link refid="class_player_health"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/IDamageable.cs" line="2" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/IDamageable.cs" bodystart="1" bodyend="4"/>
+    <listofallmembers>
+      <member refid="interface_i_damageable_1a3a89527c02a36ca98c7670347f257fea" prot="public" virt="non-virtual"><scope>IDamageable</scope><name>ApplyDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

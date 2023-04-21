@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_damage_message" kind="struct" prot="public">
+    <compoundname>DamageMessage</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_damage_message_1a1702a094e67e8f00950e0c3b4f7027eb" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject DamageMessage.damager</definition>
+        <argsstring></argsstring>
+        <name>damager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">LivingEntity.ApplyDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_damage_message_1a78a7d98945a76f425847fac0c0f9bb3d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DamageMessage.amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_damage_message_1a8d0e9bc0cedb27358d8da0337b52247e" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 DamageMessage.hitPoint</definition>
+        <argsstring></argsstring>
+        <name>hitPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" line="8" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_damage_message_1aaec39482510e0931cf27fb1a16631fd7" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 DamageMessage.hitNormal</definition>
+        <argsstring></argsstring>
+        <name>hitNormal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs" bodystart="3" bodyend="10"/>
+    <listofallmembers>
+      <member refid="struct_damage_message_1a78a7d98945a76f425847fac0c0f9bb3d" prot="public" virt="non-virtual"><scope>DamageMessage</scope><name>amount</name></member>
+      <member refid="struct_damage_message_1a1702a094e67e8f00950e0c3b4f7027eb" prot="public" virt="non-virtual"><scope>DamageMessage</scope><name>damager</name></member>
+      <member refid="struct_damage_message_1aaec39482510e0931cf27fb1a16631fd7" prot="public" virt="non-virtual"><scope>DamageMessage</scope><name>hitNormal</name></member>
+      <member refid="struct_damage_message_1a8d0e9bc0cedb27358d8da0337b52247e" prot="public" virt="non-virtual"><scope>DamageMessage</scope><name>hitPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

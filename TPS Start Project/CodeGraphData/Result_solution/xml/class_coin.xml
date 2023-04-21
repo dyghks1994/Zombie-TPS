@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_coin" kind="class" prot="public">
+    <compoundname>Coin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_item" prot="public" virt="non-virtual">IItem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_coin_1aeb17915e429515ab635e4ff8856e6341" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coin.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_coin_1a9c1b8effb32f132904b5cfdf3a6e36ad" compoundref="_coin_8cs" startline="7" endline="12">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_coin_1a9c1b8effb32f132904b5cfdf3a6e36ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coin.Use</definition>
+        <argsstring>(GameObject target)</argsstring>
+        <name>Use</name>
+        <reimplements refid="interface_i_item_1a080bfd1d0a4d58b5984ee3e3eedcd2e0">Use</reimplements>
+        <param>
+          <type>GameObject</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" bodystart="7" bodyend="12"/>
+        <references refid="class_coin_1aeb17915e429515ab635e4ff8856e6341" compoundref="_coin_8cs" startline="5">score</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="6">
+        <label>Coin</label>
+        <link refid="class_coin"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IItem</label>
+        <link refid="interface_i_item"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="9">
+        <label>Coin</label>
+        <link refid="class_coin"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>IItem</label>
+        <link refid="interface_i_item"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Coin.cs" bodystart="3" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_coin_1aeb17915e429515ab635e4ff8856e6341" prot="public" virt="non-virtual"><scope>Coin</scope><name>score</name></member>
+      <member refid="class_coin_1a9c1b8effb32f132904b5cfdf3a6e36ad" prot="public" virt="non-virtual"><scope>Coin</scope><name>Use</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

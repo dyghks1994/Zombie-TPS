@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_health" kind="class" prot="public">
+    <compoundname>PlayerHealth</compoundname>
+    <basecompoundref refid="class_living_entity" prot="public" virt="non-virtual">LivingEntity</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_health_1a054ba2003495f2722d2770e0d9ad051d" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator PlayerHealth.animator</definition>
+        <argsstring></argsstring>
+        <name>animator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_player_health_1a5de7909cbaba3f4da83878ed56e995d0" compoundref="_player_health_8cs" startline="12" endline="16">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_health_1ac0c47ea6d1758fff89b88443256ec834" prot="private" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource PlayerHealth.playerAudioPlayer</definition>
+        <argsstring></argsstring>
+        <name>playerAudioPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_player_health_1a5de7909cbaba3f4da83878ed56e995d0" compoundref="_player_health_8cs" startline="12" endline="16">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_health_1ae895878cc4a290e1d2786e58f5fc70b7" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip PlayerHealth.deathClip</definition>
+        <argsstring></argsstring>
+        <name>deathClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="8" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_player_health_1a56c5102705a28ef57414c38f6417e325" compoundref="_player_health_8cs" startline="49" endline="57">Die</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_health_1a0208dfd664ca6fb82fec892124886da1" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip PlayerHealth.hitClip</definition>
+        <argsstring></argsstring>
+        <name>hitClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_player_health_1a4228f31e483be291a63841d9a59b057c" compoundref="_player_health_8cs" startline="37" endline="47">ApplyDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_health_1a5de7909cbaba3f4da83878ed56e995d0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerHealth.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="12" bodyend="16"/>
+        <references refid="class_player_health_1a054ba2003495f2722d2770e0d9ad051d" compoundref="_player_health_8cs" startline="5">animator</references>
+        <references refid="class_player_health_1ac0c47ea6d1758fff89b88443256ec834" compoundref="_player_health_8cs" startline="6">playerAudioPlayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerHealth.UpdateUI</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="32" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="32" bodyend="35"/>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">LivingEntity.dead</references>
+        <references refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" compoundref="_living_entity_8cs" startline="7">LivingEntity.health</references>
+        <referencedby refid="class_player_health_1a4228f31e483be291a63841d9a59b057c" compoundref="_player_health_8cs" startline="37" endline="47">ApplyDamage</referencedby>
+        <referencedby refid="class_player_health_1a56c5102705a28ef57414c38f6417e325" compoundref="_player_health_8cs" startline="49" endline="57">Die</referencedby>
+        <referencedby refid="class_player_health_1a4221975e8d34e74dd92bf29ce98b5add" compoundref="_player_health_8cs" startline="18" endline="23">OnEnable</referencedby>
+        <referencedby refid="class_player_health_1acca4303651564d4177e0ef7ffd626b20" compoundref="_player_health_8cs" startline="25" endline="30">RestoreHealth</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_player_health_1a4221975e8d34e74dd92bf29ce98b5add" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerHealth.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <reimplements refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274">OnEnable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="18" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="18" bodyend="23"/>
+        <references refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">UpdateUI</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_health_1acca4303651564d4177e0ef7ffd626b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerHealth.RestoreHealth</definition>
+        <argsstring>(float newHealth)</argsstring>
+        <name>RestoreHealth</name>
+        <reimplements refid="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255">RestoreHealth</reimplements>
+        <param>
+          <type>float</type>
+          <declname>newHealth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="25" bodyend="30"/>
+        <references refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">UpdateUI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_health_1a4228f31e483be291a63841d9a59b057c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool PlayerHealth.ApplyDamage</definition>
+        <argsstring>(DamageMessage damageMessage)</argsstring>
+        <name>ApplyDamage</name>
+        <reimplements refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404">ApplyDamage</reimplements>
+        <param>
+          <type><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref></type>
+          <declname>damageMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="37" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="37" bodyend="47"/>
+        <references refid="class_player_health_1a0208dfd664ca6fb82fec892124886da1" compoundref="_player_health_8cs" startline="9">hitClip</references>
+        <references refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">UpdateUI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_health_1a56c5102705a28ef57414c38f6417e325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void PlayerHealth.Die</definition>
+        <argsstring>()</argsstring>
+        <name>Die</name>
+        <reimplements refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d">Die</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="49" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="49" bodyend="57"/>
+        <references refid="class_player_health_1ae895878cc4a290e1d2786e58f5fc70b7" compoundref="_player_health_8cs" startline="8">deathClip</references>
+        <references refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">UpdateUI</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>PlayerHealth</label>
+        <link refid="class_player_health"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="93">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>PlayerHealth</label>
+        <link refid="class_player_health"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="97">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerHealth.cs" bodystart="3" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_player_health_1a054ba2003495f2722d2770e0d9ad051d" prot="private" virt="non-virtual"><scope>PlayerHealth</scope><name>animator</name></member>
+      <member refid="class_player_health_1a4228f31e483be291a63841d9a59b057c" prot="public" virt="virtual"><scope>PlayerHealth</scope><name>ApplyDamage</name></member>
+      <member refid="class_player_health_1a5de7909cbaba3f4da83878ed56e995d0" prot="private" virt="non-virtual"><scope>PlayerHealth</scope><name>Awake</name></member>
+      <member refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>dead</name></member>
+      <member refid="class_player_health_1ae895878cc4a290e1d2786e58f5fc70b7" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>deathClip</name></member>
+      <member refid="class_player_health_1a56c5102705a28ef57414c38f6417e325" prot="public" virt="virtual"><scope>PlayerHealth</scope><name>Die</name></member>
+      <member refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>health</name></member>
+      <member refid="class_player_health_1a0208dfd664ca6fb82fec892124886da1" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>hitClip</name></member>
+      <member refid="class_living_entity_1ab63e59212312f3cce1d8f9cb8def9261" prot="protected" virt="non-virtual"><scope>PlayerHealth</scope><name>IsInvulnerabe</name></member>
+      <member refid="class_living_entity_1ab34d711915273ab0e68f7db26c23a398" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>OnDeath</name></member>
+      <member refid="class_player_health_1a4221975e8d34e74dd92bf29ce98b5add" prot="protected" virt="virtual"><scope>PlayerHealth</scope><name>OnEnable</name></member>
+      <member refid="class_player_health_1ac0c47ea6d1758fff89b88443256ec834" prot="private" virt="non-virtual"><scope>PlayerHealth</scope><name>playerAudioPlayer</name></member>
+      <member refid="class_player_health_1acca4303651564d4177e0ef7ffd626b20" prot="public" virt="virtual"><scope>PlayerHealth</scope><name>RestoreHealth</name></member>
+      <member refid="class_living_entity_1af3889cf8afaf8ef2f3732c7ecfc66333" prot="public" virt="non-virtual"><scope>PlayerHealth</scope><name>startingHealth</name></member>
+      <member refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" prot="private" virt="non-virtual"><scope>PlayerHealth</scope><name>UpdateUI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_living_entity" kind="class" prot="public">
+    <compoundname>LivingEntity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_damageable" prot="public" virt="non-virtual">IDamageable</basecompoundref>
+    <derivedcompoundref refid="class_enemy" prot="public" virt="non-virtual">Enemy</derivedcompoundref>
+    <derivedcompoundref refid="class_player_health" prot="public" virt="non-virtual">PlayerHealth</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_living_entity_1af3889cf8afaf8ef2f3732c7ecfc66333" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LivingEntity.startingHealth</definition>
+        <argsstring></argsstring>
+        <name>startingHealth</name>
+        <initializer>= 100f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274" compoundref="_living_entity_8cs" startline="25" endline="29">OnEnable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float LivingEntity.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">ApplyDamage</referencedby>
+        <referencedby refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274" compoundref="_living_entity_8cs" startline="25" endline="29">OnEnable</referencedby>
+        <referencedby refid="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255" compoundref="_living_entity_8cs" startline="43" endline="48">RestoreHealth</referencedby>
+        <referencedby refid="class_enemy_1a4ecd69219285fc68ded1fecbbc347182" compoundref="_enemy_8cs" startline="94" endline="108">Enemy.Setup</referencedby>
+        <referencedby refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">PlayerHealth.UpdateUI</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool LivingEntity.dead</definition>
+        <argsstring></argsstring>
+        <name>dead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="8" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">ApplyDamage</referencedby>
+        <referencedby refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d" compoundref="_living_entity_8cs" startline="50" endline="55">Die</referencedby>
+        <referencedby refid="class_enemy_1af061b512970e551024405942104355e2" compoundref="_enemy_8cs" startline="137" endline="192">Enemy.FixedUpdate</referencedby>
+        <referencedby refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274" compoundref="_living_entity_8cs" startline="25" endline="29">OnEnable</referencedby>
+        <referencedby refid="class_player_controller_1a2a0510e318c75ef04e45b4ece3bd31cd" compoundref="_player_controller_8cs" startline="64" endline="78">PlayerController.OnTriggerEnter</referencedby>
+        <referencedby refid="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255" compoundref="_living_entity_8cs" startline="43" endline="48">RestoreHealth</referencedby>
+        <referencedby refid="class_enemy_1a80560cd7c04c1c0846715740bad699d1" compoundref="_enemy_8cs" startline="115" endline="135">Enemy.Update</referencedby>
+        <referencedby refid="class_enemy_1aa61bad37699d173520ef2d4a7ba58d49" compoundref="_enemy_8cs" startline="194" endline="246">Enemy.UpdatePath</referencedby>
+        <referencedby refid="class_player_health_1a9de1c1b06cabc458fd1b4e1e1586922c" compoundref="_player_health_8cs" startline="32" endline="35">PlayerHealth.UpdateUI</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_living_entity_1ab63e59212312f3cce1d8f9cb8def9261" prot="protected" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool LivingEntity.IsInvulnerabe</definition>
+        <argsstring></argsstring>
+        <name>IsInvulnerabe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="15" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">ApplyDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_living_entity_1ab34d711915273ab0e68f7db26c23a398" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action LivingEntity.OnDeath</definition>
+        <argsstring></argsstring>
+        <name>OnDeath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="10" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d" compoundref="_living_entity_8cs" startline="50" endline="55">Die</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_living_entity_1aa8d9b31d35ac2e6182c33fc4c09de4ee" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float LivingEntity.minTimeBetDamaged</definition>
+        <argsstring></argsstring>
+        <name>minTimeBetDamaged</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_living_entity_1a931d8958f0b21b07bf0e60d0d89554af" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LivingEntity.lastDamagedTime</definition>
+        <argsstring></argsstring>
+        <name>lastDamagedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="13" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">ApplyDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_living_entity_1a92e695d9cca1e753eec6c22043055274" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LivingEntity.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <reimplementedby refid="class_player_health_1a4221975e8d34e74dd92bf29ce98b5add">OnEnable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="25" bodyend="29"/>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">dead</references>
+        <references refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" compoundref="_living_entity_8cs" startline="7">health</references>
+        <references refid="class_living_entity_1af3889cf8afaf8ef2f3732c7ecfc66333" compoundref="_living_entity_8cs" startline="6">startingHealth</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool LivingEntity.ApplyDamage</definition>
+        <argsstring>(DamageMessage damageMessage)</argsstring>
+        <name>ApplyDamage</name>
+        <reimplements refid="interface_i_damageable_1a3a89527c02a36ca98c7670347f257fea">ApplyDamage</reimplements>
+        <reimplementedby refid="class_player_health_1a4228f31e483be291a63841d9a59b057c">ApplyDamage</reimplementedby>
+        <reimplementedby refid="class_enemy_1a583d9ed10347441ee2ca0bc10430b9a7">ApplyDamage</reimplementedby>
+        <param>
+          <type><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref></type>
+          <declname>damageMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="31" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="31" bodyend="41"/>
+        <references refid="struct_damage_message_1a1702a094e67e8f00950e0c3b4f7027eb" compoundref="_damage_message_8cs" startline="5">DamageMessage.damager</references>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">dead</references>
+        <references refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d" compoundref="_living_entity_8cs" startline="50" endline="55">Die</references>
+        <references refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" compoundref="_living_entity_8cs" startline="7">health</references>
+        <references refid="class_living_entity_1ab63e59212312f3cce1d8f9cb8def9261" compoundref="_living_entity_8cs" startline="16">IsInvulnerabe</references>
+        <references refid="class_living_entity_1a931d8958f0b21b07bf0e60d0d89554af" compoundref="_living_entity_8cs" startline="13">lastDamagedTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LivingEntity.RestoreHealth</definition>
+        <argsstring>(float newHealth)</argsstring>
+        <name>RestoreHealth</name>
+        <reimplementedby refid="class_player_health_1acca4303651564d4177e0ef7ffd626b20">RestoreHealth</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>newHealth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="43" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="43" bodyend="48"/>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">dead</references>
+        <references refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" compoundref="_living_entity_8cs" startline="7">health</references>
+      </memberdef>
+      <memberdef kind="function" id="class_living_entity_1a136290b94ac125eb85b17ec400f8916d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LivingEntity.Die</definition>
+        <argsstring>()</argsstring>
+        <name>Die</name>
+        <reimplementedby refid="class_player_health_1a56c5102705a28ef57414c38f6417e325">Die</reimplementedby>
+        <reimplementedby refid="class_enemy_1ae71b48d5709827e50cb72ebeaf676ca8">Die</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="50" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="50" bodyend="55"/>
+        <references refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" compoundref="_living_entity_8cs" startline="8">dead</references>
+        <references refid="class_living_entity_1ab34d711915273ab0e68f7db26c23a398" compoundref="_living_entity_8cs" startline="10">OnDeath</references>
+        <referencedby refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" compoundref="_living_entity_8cs" startline="31" endline="41">ApplyDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>PlayerHealth</label>
+        <link refid="class_player_health"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="73">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="76">
+        <label>LivingEntity</label>
+        <link refid="class_living_entity"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="78">
+        <label>IDamageable</label>
+        <link refid="interface_i_damageable"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LivingEntity.cs" bodystart="4" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_living_entity_1af4f7a2a1d88da1bf5838aadfbc5e7404" prot="public" virt="virtual"><scope>LivingEntity</scope><name>ApplyDamage</name></member>
+      <member refid="class_living_entity_1a0e96f6697e715a35b7030549f5a2e2bf" prot="public" virt="non-virtual"><scope>LivingEntity</scope><name>dead</name></member>
+      <member refid="class_living_entity_1a136290b94ac125eb85b17ec400f8916d" prot="public" virt="virtual"><scope>LivingEntity</scope><name>Die</name></member>
+      <member refid="class_living_entity_1aca3830a5e3e593e8ae0984bc96045a00" prot="public" virt="non-virtual"><scope>LivingEntity</scope><name>health</name></member>
+      <member refid="class_living_entity_1ab63e59212312f3cce1d8f9cb8def9261" prot="protected" virt="non-virtual"><scope>LivingEntity</scope><name>IsInvulnerabe</name></member>
+      <member refid="class_living_entity_1a931d8958f0b21b07bf0e60d0d89554af" prot="private" virt="non-virtual"><scope>LivingEntity</scope><name>lastDamagedTime</name></member>
+      <member refid="class_living_entity_1aa8d9b31d35ac2e6182c33fc4c09de4ee" prot="private" virt="non-virtual"><scope>LivingEntity</scope><name>minTimeBetDamaged</name></member>
+      <member refid="class_living_entity_1ab34d711915273ab0e68f7db26c23a398" prot="public" virt="non-virtual"><scope>LivingEntity</scope><name>OnDeath</name></member>
+      <member refid="class_living_entity_1a92e695d9cca1e753eec6c22043055274" prot="protected" virt="virtual"><scope>LivingEntity</scope><name>OnEnable</name></member>
+      <member refid="class_living_entity_1a18cc474222a5fd7d8773ea53f1a64255" prot="public" virt="virtual"><scope>LivingEntity</scope><name>RestoreHealth</name></member>
+      <member refid="class_living_entity_1af3889cf8afaf8ef2f3732c7ecfc66333" prot="public" virt="non-virtual"><scope>LivingEntity</scope><name>startingHealth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

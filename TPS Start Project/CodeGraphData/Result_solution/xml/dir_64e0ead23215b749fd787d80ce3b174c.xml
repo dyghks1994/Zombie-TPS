@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_64e0ead23215b749fd787d80ce3b174c" kind="dir">
+    <compoundname>D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts</compoundname>
+    <innerfile refid="_ammo_pack_8cs">AmmoPack.cs</innerfile>
+    <innerfile refid="_coin_8cs">Coin.cs</innerfile>
+    <innerfile refid="_crosshair_8cs">Crosshair.cs</innerfile>
+    <innerfile refid="_damage_message_8cs">DamageMessage.cs</innerfile>
+    <innerfile refid="_effect_manager_8cs">EffectManager.cs</innerfile>
+    <innerfile refid="_enemy_8cs">Enemy.cs</innerfile>
+    <innerfile refid="_enemy_spawner_8cs">EnemySpawner.cs</innerfile>
+    <innerfile refid="_game_manager_8cs">GameManager.cs</innerfile>
+    <innerfile refid="_gun_8cs">Gun.cs</innerfile>
+    <innerfile refid="_health_pack_8cs">HealthPack.cs</innerfile>
+    <innerfile refid="_i_damageable_8cs">IDamageable.cs</innerfile>
+    <innerfile refid="_i_item_8cs">IItem.cs</innerfile>
+    <innerfile refid="_item_spawner_8cs">ItemSpawner.cs</innerfile>
+    <innerfile refid="_late_update_follow_8cs">LateUpdateFollow.cs</innerfile>
+    <innerfile refid="_living_entity_8cs">LivingEntity.cs</innerfile>
+    <innerfile refid="_player_controller_8cs">PlayerController.cs</innerfile>
+    <innerfile refid="_player_health_8cs">PlayerHealth.cs</innerfile>
+    <innerfile refid="_player_input_8cs">PlayerInput.cs</innerfile>
+    <innerfile refid="_player_movement_8cs">PlayerMovement.cs</innerfile>
+    <innerfile refid="_player_shooter_8cs">PlayerShooter.cs</innerfile>
+    <innerfile refid="_rotator_8cs">Rotator.cs</innerfile>
+    <innerfile refid="_u_i_manager_8cs">UIManager.cs</innerfile>
+    <innerfile refid="_utility_8cs">Utility.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

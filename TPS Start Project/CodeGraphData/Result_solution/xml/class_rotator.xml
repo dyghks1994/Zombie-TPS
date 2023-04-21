@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_rotator" kind="class" prot="public">
+    <compoundname>Rotator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_rotator_1a48d4cc4483562723f80a525772022862" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Rotator.rotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeed</name>
+        <initializer>= 60f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_rotator_1a5b573a6122b39499ebd67d6db7c905e9" compoundref="_rotator_8cs" startline="7" endline="10">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_rotator_1a5b573a6122b39499ebd67d6db7c905e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rotator.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" bodystart="7" bodyend="10"/>
+        <references refid="class_rotator_1a48d4cc4483562723f80a525772022862" compoundref="_rotator_8cs" startline="5">rotationSpeed</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="115">
+        <label>Rotator</label>
+        <link refid="class_rotator"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>Rotator</label>
+        <link refid="class_rotator"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Rotator.cs" bodystart="3" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_rotator_1a48d4cc4483562723f80a525772022862" prot="public" virt="non-virtual"><scope>Rotator</scope><name>rotationSpeed</name></member>
+      <member refid="class_rotator_1a5b573a6122b39499ebd67d6db7c905e9" prot="private" virt="non-virtual"><scope>Rotator</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

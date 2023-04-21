@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_u_i_manager" kind="class" prot="public">
+    <compoundname>UIManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_i_manager_1a1cc5fa54cf4bf1f23374b14702f6d790" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_u_i_manager" kindref="compound">UIManager</ref></type>
+        <definition>UIManager UIManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_u_i_manager_1a006246dc7fcecbe2387d70731191d4f6" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_u_i_manager" kindref="compound">UIManager</ref></type>
+        <definition>UIManager UIManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" compoundref="_player_shooter_8cs" startline="150" endline="158">PlayerShooter.UpdateUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_i_manager_1ad29bb08e851757de6253cef0ddfff33f" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject UIManager.gameoverUI</definition>
+        <argsstring></argsstring>
+        <name>gameoverUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="19" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1a6ae71e3726a7b677999ed5cf86a3527a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_crosshair" kindref="compound">Crosshair</ref></type>
+        <definition>Crosshair UIManager.crosshair</definition>
+        <argsstring></argsstring>
+        <name>crosshair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="20" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1ad21cfa07153af79bbacf9860052e9401" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text UIManager.healthText</definition>
+        <argsstring></argsstring>
+        <name>healthText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="22" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1a11aba2814763174d54af5e165934d6b2" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text UIManager.lifeText</definition>
+        <argsstring></argsstring>
+        <name>lifeText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="23" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1aa193b5049dd9f7e00b09a0d7fa0ffb76" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text UIManager.scoreText</definition>
+        <argsstring></argsstring>
+        <name>scoreText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="24" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1a04923d71c5e59ed6ea337b618bb9cc11" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text UIManager.ammoText</definition>
+        <argsstring></argsstring>
+        <name>ammoText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_manager_1a44760db5ed39de89fbb5938012fb21b2" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text UIManager.waveText</definition>
+        <argsstring></argsstring>
+        <name>waveText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="26" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_i_manager_1a10d078fba7cab32ba623f4f7259432ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateAmmoText</definition>
+        <argsstring>(int magAmmo, int remainAmmo)</argsstring>
+        <name>UpdateAmmoText</name>
+        <param>
+          <type>int</type>
+          <declname>magAmmo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>remainAmmo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="28" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1aaaae819d76cd320ca5ed7dd6ec25f6a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateScoreText</definition>
+        <argsstring>(int newScore)</argsstring>
+        <name>UpdateScoreText</name>
+        <param>
+          <type>int</type>
+          <declname>newScore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="33" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1ac4dc867f657356f9585c34cdd2ef35d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateWaveText</definition>
+        <argsstring>(int waves, int count)</argsstring>
+        <name>UpdateWaveText</name>
+        <param>
+          <type>int</type>
+          <declname>waves</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="38" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1a885059f71fa3e7b8cbfe1079f6a923f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateLifeText</definition>
+        <argsstring>(int count)</argsstring>
+        <name>UpdateLifeText</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="43" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1a04889c845f718db363eee2110cb3670b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateCrossHairPosition</definition>
+        <argsstring>(Vector3 worldPosition)</argsstring>
+        <name>UpdateCrossHairPosition</name>
+        <param>
+          <type>Vector3</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="48" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1a4fa5ccdfed41264c3d109fa5c4ffd456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.UpdateHealthText</definition>
+        <argsstring>(float health)</argsstring>
+        <name>UpdateHealthText</name>
+        <param>
+          <type>float</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="53" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1aca8ee71b4a29c71896f1bc33e87e9fd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.SetActiveCrosshair</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>SetActiveCrosshair</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="58" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1a556e99b8660ccf500347315dd1361ceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.SetActiveGameoverUI</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>SetActiveGameoverUI</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="63" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_manager_1aded7e598b9aa708352e241eb46dd3c2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UIManager.GameRestart</definition>
+        <argsstring>()</argsstring>
+        <name>GameRestart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="68" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="119">
+        <label>UIManager</label>
+        <link refid="class_u_i_manager"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="121">
+        <label>UIManager</label>
+        <link refid="class_u_i_manager"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+        <childnode refid="121" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+        <childnode refid="123" relation="usage">
+          <edgelabel>crosshair</edgelabel>
+        </childnode>
+      </node>
+      <node id="123">
+        <label>Crosshair</label>
+        <link refid="class_crosshair"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/UIManager.cs" bodystart="5" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_u_i_manager_1a04923d71c5e59ed6ea337b618bb9cc11" prot="private" virt="non-virtual"><scope>UIManager</scope><name>ammoText</name></member>
+      <member refid="class_u_i_manager_1a6ae71e3726a7b677999ed5cf86a3527a" prot="private" virt="non-virtual"><scope>UIManager</scope><name>crosshair</name></member>
+      <member refid="class_u_i_manager_1ad29bb08e851757de6253cef0ddfff33f" prot="private" virt="non-virtual"><scope>UIManager</scope><name>gameoverUI</name></member>
+      <member refid="class_u_i_manager_1aded7e598b9aa708352e241eb46dd3c2b" prot="public" virt="non-virtual"><scope>UIManager</scope><name>GameRestart</name></member>
+      <member refid="class_u_i_manager_1ad21cfa07153af79bbacf9860052e9401" prot="private" virt="non-virtual"><scope>UIManager</scope><name>healthText</name></member>
+      <member refid="class_u_i_manager_1a006246dc7fcecbe2387d70731191d4f6" prot="public" virt="non-virtual"><scope>UIManager</scope><name>Instance</name></member>
+      <member refid="class_u_i_manager_1a1cc5fa54cf4bf1f23374b14702f6d790" prot="private" virt="non-virtual"><scope>UIManager</scope><name>instance</name></member>
+      <member refid="class_u_i_manager_1a11aba2814763174d54af5e165934d6b2" prot="private" virt="non-virtual"><scope>UIManager</scope><name>lifeText</name></member>
+      <member refid="class_u_i_manager_1aa193b5049dd9f7e00b09a0d7fa0ffb76" prot="private" virt="non-virtual"><scope>UIManager</scope><name>scoreText</name></member>
+      <member refid="class_u_i_manager_1aca8ee71b4a29c71896f1bc33e87e9fd3" prot="public" virt="non-virtual"><scope>UIManager</scope><name>SetActiveCrosshair</name></member>
+      <member refid="class_u_i_manager_1a556e99b8660ccf500347315dd1361ceb" prot="public" virt="non-virtual"><scope>UIManager</scope><name>SetActiveGameoverUI</name></member>
+      <member refid="class_u_i_manager_1a10d078fba7cab32ba623f4f7259432ef" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateAmmoText</name></member>
+      <member refid="class_u_i_manager_1a04889c845f718db363eee2110cb3670b" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateCrossHairPosition</name></member>
+      <member refid="class_u_i_manager_1a4fa5ccdfed41264c3d109fa5c4ffd456" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateHealthText</name></member>
+      <member refid="class_u_i_manager_1a885059f71fa3e7b8cbfe1079f6a923f8" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateLifeText</name></member>
+      <member refid="class_u_i_manager_1aaaae819d76cd320ca5ed7dd6ec25f6a8" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateScoreText</name></member>
+      <member refid="class_u_i_manager_1ac4dc867f657356f9585c34cdd2ef35d4" prot="public" virt="non-virtual"><scope>UIManager</scope><name>UpdateWaveText</name></member>
+      <member refid="class_u_i_manager_1a44760db5ed39de89fbb5938012fb21b2" prot="private" virt="non-virtual"><scope>UIManager</scope><name>waveText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

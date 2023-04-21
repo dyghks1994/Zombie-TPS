@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_21d56b47af0b8a498bc8ca5cba34b055" kind="dir">
+    <compoundname>D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project</compoundname>
+    <innerdir refid="dir_64e0fa157ec2fee41ee96110767713a7">D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_crosshair" kind="class" prot="public">
+    <compoundname>Crosshair</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_crosshair_1a0e17118ad9f228c4e9cf9dd2d571c3cf" prot="public" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image Crosshair.aimPointReticle</definition>
+        <argsstring></argsstring>
+        <name>aimPointReticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_crosshair_1af0422653665a712dfe4867420b134ff5" prot="public" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image Crosshair.hitPointReticle</definition>
+        <argsstring></argsstring>
+        <name>hitPointReticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" compoundref="_crosshair_8cs" startline="34" endline="42">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_crosshair_1a5852c7cad96276353f1a40725161b943" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Crosshair.smoothTime</definition>
+        <argsstring></argsstring>
+        <name>smoothTime</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" compoundref="_crosshair_8cs" startline="34" endline="42">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_crosshair_1afad37377723bea81c31228541c1ff0eb" prot="private" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera Crosshair.screenCamera</definition>
+        <argsstring></argsstring>
+        <name>screenCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="11" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1acd999de367881dcea921c3829aabaa64" compoundref="_crosshair_8cs" startline="17" endline="21">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_crosshair_1aa207f60377444987b4756db4d677b9b0" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform Crosshair.crossHairRectTransform</definition>
+        <argsstring></argsstring>
+        <name>crossHairRectTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1acd999de367881dcea921c3829aabaa64" compoundref="_crosshair_8cs" startline="17" endline="21">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Crosshair.currentHitPointVelocity</definition>
+        <argsstring></argsstring>
+        <name>currentHitPointVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="14" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" compoundref="_crosshair_8cs" startline="34" endline="42">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Crosshair.targetPoint</definition>
+        <argsstring></argsstring>
+        <name>targetPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="15" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" compoundref="_crosshair_8cs" startline="34" endline="42">Update</referencedby>
+        <referencedby refid="class_crosshair_1a73821b11f7aaf11b0b2cc783d9d2c710" compoundref="_crosshair_8cs" startline="29" endline="32">UpdatePosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_crosshair_1acd999de367881dcea921c3829aabaa64" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Crosshair.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="17" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="17" bodyend="21"/>
+        <references refid="class_crosshair_1aa207f60377444987b4756db4d677b9b0" compoundref="_crosshair_8cs" startline="12">crossHairRectTransform</references>
+        <references refid="class_crosshair_1afad37377723bea81c31228541c1ff0eb" compoundref="_crosshair_8cs" startline="11">screenCamera</references>
+      </memberdef>
+      <memberdef kind="function" id="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Crosshair.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="34" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="34" bodyend="42"/>
+        <references refid="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" compoundref="_crosshair_8cs" startline="14">currentHitPointVelocity</references>
+        <references refid="class_crosshair_1af0422653665a712dfe4867420b134ff5" compoundref="_crosshair_8cs" startline="7">hitPointReticle</references>
+        <references refid="class_crosshair_1a5852c7cad96276353f1a40725161b943" compoundref="_crosshair_8cs" startline="9">smoothTime</references>
+        <references refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" compoundref="_crosshair_8cs" startline="15">targetPoint</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_crosshair_1a193ae4ec32930449c26a7a7165c8e91c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Crosshair.SetActiveCrosshair</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>SetActiveCrosshair</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="23" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_crosshair_1a73821b11f7aaf11b0b2cc783d9d2c710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Crosshair.UpdatePosition</definition>
+        <argsstring>(Vector3 worldPoint)</argsstring>
+        <name>UpdatePosition</name>
+        <param>
+          <type>Vector3</type>
+          <declname>worldPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="29" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="29" bodyend="32"/>
+        <references refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" compoundref="_crosshair_8cs" startline="15">targetPoint</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>Crosshair</label>
+        <link refid="class_crosshair"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>Crosshair</label>
+        <link refid="class_crosshair"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs" bodystart="4" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_crosshair_1a0e17118ad9f228c4e9cf9dd2d571c3cf" prot="public" virt="non-virtual"><scope>Crosshair</scope><name>aimPointReticle</name></member>
+      <member refid="class_crosshair_1acd999de367881dcea921c3829aabaa64" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>Awake</name></member>
+      <member refid="class_crosshair_1aa207f60377444987b4756db4d677b9b0" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>crossHairRectTransform</name></member>
+      <member refid="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>currentHitPointVelocity</name></member>
+      <member refid="class_crosshair_1af0422653665a712dfe4867420b134ff5" prot="public" virt="non-virtual"><scope>Crosshair</scope><name>hitPointReticle</name></member>
+      <member refid="class_crosshair_1afad37377723bea81c31228541c1ff0eb" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>screenCamera</name></member>
+      <member refid="class_crosshair_1a193ae4ec32930449c26a7a7165c8e91c" prot="public" virt="non-virtual"><scope>Crosshair</scope><name>SetActiveCrosshair</name></member>
+      <member refid="class_crosshair_1a5852c7cad96276353f1a40725161b943" prot="public" virt="non-virtual"><scope>Crosshair</scope><name>smoothTime</name></member>
+      <member refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>targetPoint</name></member>
+      <member refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" prot="private" virt="non-virtual"><scope>Crosshair</scope><name>Update</name></member>
+      <member refid="class_crosshair_1a73821b11f7aaf11b0b2cc783d9d2c710" prot="public" virt="non-virtual"><scope>Crosshair</scope><name>UpdatePosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

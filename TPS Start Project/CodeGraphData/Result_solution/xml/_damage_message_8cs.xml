@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_damage_message_8cs" kind="file">
+    <compoundname>DamageMessage.cs</compoundname>
+    <innerclass refid="struct_damage_message" prot="public">DamageMessage</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="struct_damage_message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="struct_damage_message_1a1702a094e67e8f00950e0c3b4f7027eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject<sp/><ref refid="struct_damage_message_1a1702a094e67e8f00950e0c3b4f7027eb" kindref="member">damager</ref>;</highlight></codeline>
+<codeline lineno="6" refid="struct_damage_message_1a78a7d98945a76f425847fac0c0f9bb3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_damage_message_1a78a7d98945a76f425847fac0c0f9bb3d" kindref="member">amount</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="struct_damage_message_1a8d0e9bc0cedb27358d8da0337b52247e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="struct_damage_message_1a8d0e9bc0cedb27358d8da0337b52247e" kindref="member">hitPoint</ref>;</highlight></codeline>
+<codeline lineno="9" refid="struct_damage_message_1aaec39482510e0931cf27fb1a16631fd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="struct_damage_message_1aaec39482510e0931cf27fb1a16631fd7" kindref="member">hitNormal</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/DamageMessage.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_input" kind="class" prot="public">
+    <compoundname>PlayerInput</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_input_1a7beff18199b526dd0f6392d63942c8a8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerInput.fireButtonName</definition>
+        <argsstring></argsstring>
+        <name>fireButtonName</name>
+        <initializer>= &quot;Fire1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_1ae3c3768e51ea06249a06a4cec7a23d85" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerInput.jumpButtonName</definition>
+        <argsstring></argsstring>
+        <name>jumpButtonName</name>
+        <initializer>= &quot;Jump&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_1a828bdab89feefc05a52151c1326019bc" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerInput.moveHorizontalAxisName</definition>
+        <argsstring></argsstring>
+        <name>moveHorizontalAxisName</name>
+        <initializer>= &quot;Horizontal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_1a6e8f4194f80c3280bfae4607724b42ae" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerInput.moveVerticalAxisName</definition>
+        <argsstring></argsstring>
+        <name>moveVerticalAxisName</name>
+        <initializer>= &quot;Vertical&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="8" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_input_1acbd304a5d5c2acf71b5c992ba421d4d2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PlayerInput.reloadButtonName</definition>
+        <argsstring></argsstring>
+        <name>reloadButtonName</name>
+        <initializer>= &quot;Reload&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_input_1ac50f415960993d7d4040dd671074e66b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerInput.moveInput</definition>
+        <argsstring></argsstring>
+        <name>moveInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="11" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_player_movement_1a0caaa871b9ef680c9f02bd0e22c77db1" compoundref="_player_movement_8cs" startline="36" endline="43">PlayerMovement.FixedUpdate</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+        <referencedby refid="class_player_movement_1aaf9b77d7177d538be9c1447d08191322" compoundref="_player_movement_8cs" startline="45" endline="48">PlayerMovement.Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool PlayerInput.fire</definition>
+        <argsstring></argsstring>
+        <name>fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_player_movement_1a0caaa871b9ef680c9f02bd0e22c77db1" compoundref="_player_movement_8cs" startline="36" endline="43">PlayerMovement.FixedUpdate</referencedby>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">PlayerShooter.FixedUpdate</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">PlayerShooter.Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_player_input_1a02e0669200b02197394bddc68bfc8d9a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool PlayerInput.reload</definition>
+        <argsstring></argsstring>
+        <name>reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="13" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">PlayerShooter.FixedUpdate</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_player_input_1a4c1218d084056c641bb82bba85053bda" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool PlayerInput.jump</definition>
+        <argsstring></argsstring>
+        <name>jump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="14" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_player_movement_1a0caaa871b9ef680c9f02bd0e22c77db1" compoundref="_player_movement_8cs" startline="36" endline="43">PlayerMovement.FixedUpdate</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_input_1a6a20760e050710a284ec0e877164dea4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerInput.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="16" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="16" bodyend="34"/>
+        <references refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" compoundref="_player_input_8cs" startline="12">fire</references>
+        <references refid="class_player_input_1a7beff18199b526dd0f6392d63942c8a8" compoundref="_player_input_8cs" startline="5">fireButtonName</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="8">GameManager.Instance</references>
+        <references refid="class_game_manager_1a71caa734a86fc2ab954c719133db4f39" compoundref="_game_manager_8cs" startline="18">GameManager.isGameover</references>
+        <references refid="class_player_input_1a4c1218d084056c641bb82bba85053bda" compoundref="_player_input_8cs" startline="14">jump</references>
+        <references refid="class_player_input_1ae3c3768e51ea06249a06a4cec7a23d85" compoundref="_player_input_8cs" startline="6">jumpButtonName</references>
+        <references refid="class_player_input_1a828bdab89feefc05a52151c1326019bc" compoundref="_player_input_8cs" startline="7">moveHorizontalAxisName</references>
+        <references refid="class_player_input_1ac50f415960993d7d4040dd671074e66b" compoundref="_player_input_8cs" startline="11">moveInput</references>
+        <references refid="class_player_input_1a6e8f4194f80c3280bfae4607724b42ae" compoundref="_player_input_8cs" startline="8">moveVerticalAxisName</references>
+        <references refid="class_player_input_1a02e0669200b02197394bddc68bfc8d9a" compoundref="_player_input_8cs" startline="13">reload</references>
+        <references refid="class_player_input_1acbd304a5d5c2acf71b5c992ba421d4d2" compoundref="_player_input_8cs" startline="9">reloadButtonName</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="98">
+        <label>PlayerInput</label>
+        <link refid="class_player_input"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="100">
+        <label>PlayerInput</label>
+        <link refid="class_player_input"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerInput.cs" bodystart="3" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>fire</name></member>
+      <member refid="class_player_input_1a7beff18199b526dd0f6392d63942c8a8" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>fireButtonName</name></member>
+      <member refid="class_player_input_1a4c1218d084056c641bb82bba85053bda" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>jump</name></member>
+      <member refid="class_player_input_1ae3c3768e51ea06249a06a4cec7a23d85" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>jumpButtonName</name></member>
+      <member refid="class_player_input_1a828bdab89feefc05a52151c1326019bc" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>moveHorizontalAxisName</name></member>
+      <member refid="class_player_input_1ac50f415960993d7d4040dd671074e66b" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>moveInput</name></member>
+      <member refid="class_player_input_1a6e8f4194f80c3280bfae4607724b42ae" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>moveVerticalAxisName</name></member>
+      <member refid="class_player_input_1a02e0669200b02197394bddc68bfc8d9a" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>reload</name></member>
+      <member refid="class_player_input_1acbd304a5d5c2acf71b5c992ba421d4d2" prot="public" virt="non-virtual"><scope>PlayerInput</scope><name>reloadButtonName</name></member>
+      <member refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" prot="private" virt="non-virtual"><scope>PlayerInput</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

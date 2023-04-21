@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_effect_manager" kind="class" prot="public">
+    <compoundname>EffectManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" prot="public" static="no">
+        <name>EffectType</name>
+        <enumvalue id="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79ad13bc5b68b2bd9e18f29777db17cc563" prot="public">
+          <name>Common</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79a76b3600561b0723b1634aeac8e29d2f9" prot="public">
+          <name>Flesh</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="16" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_effect_manager" kindref="compound">EffectManager</ref></type>
+        <definition>EffectManager EffectManager.m_Instance</definition>
+        <argsstring></argsstring>
+        <name>m_Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_effect_manager_1a70e6a751653a5a515397763c4624bc68" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_effect_manager" kindref="compound">EffectManager</ref></type>
+        <definition>EffectManager EffectManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem EffectManager.commonHitEffectPrefab</definition>
+        <argsstring></argsstring>
+        <name>commonHitEffectPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="21" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" compoundref="_effect_manager_8cs" startline="24" endline="41">PlayHitEffect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem EffectManager.fleshHitEffectPrefab</definition>
+        <argsstring></argsstring>
+        <name>fleshHitEffectPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="22" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" compoundref="_effect_manager_8cs" startline="24" endline="41">PlayHitEffect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EffectManager.PlayHitEffect</definition>
+        <argsstring>(Vector3 pos, Vector3 normal, Transform parent=null, EffectType effectType=EffectType.Common)</argsstring>
+        <name>PlayHitEffect</name>
+        <param>
+          <type>Vector3</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>parent</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type><ref refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" kindref="member">EffectType</ref></type>
+          <declname>effectType</declname>
+          <defval>EffectType.Common</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="24" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="24" bodyend="41"/>
+        <references refid="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" compoundref="_effect_manager_8cs" startline="21">commonHitEffectPrefab</references>
+        <references refid="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" compoundref="_effect_manager_8cs" startline="22">fleshHitEffectPrefab</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>EffectManager</label>
+        <link refid="class_effect_manager"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>EffectManager</label>
+        <link refid="class_effect_manager"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_Instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/EffectManager.cs" bodystart="3" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_effect_manager_1a0b36a1d424f803f33d765eac9769e091" prot="public" virt="non-virtual"><scope>EffectManager</scope><name>commonHitEffectPrefab</name></member>
+      <member refid="class_effect_manager_1ae9504ef6d8a085995e749a0e2f003a79" prot="public" virt="non-virtual"><scope>EffectManager</scope><name>EffectType</name></member>
+      <member refid="class_effect_manager_1a03335d0eff4268d4abb372b94a57c263" prot="public" virt="non-virtual"><scope>EffectManager</scope><name>fleshHitEffectPrefab</name></member>
+      <member refid="class_effect_manager_1a70e6a751653a5a515397763c4624bc68" prot="public" virt="non-virtual"><scope>EffectManager</scope><name>Instance</name></member>
+      <member refid="class_effect_manager_1a5d10e7c386a85b2cfc025b71c7ccd646" prot="private" virt="non-virtual"><scope>EffectManager</scope><name>m_Instance</name></member>
+      <member refid="class_effect_manager_1ae751a4bf4c6e82f9867040e0f177577b" prot="public" virt="non-virtual"><scope>EffectManager</scope><name>PlayHitEffect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_item_spawner" kind="class" prot="public">
+    <compoundname>ItemSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] ItemSpawner.items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" compoundref="_item_spawner_8cs" startline="33" endline="42">Spawn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform ItemSpawner.playerTransform</definition>
+        <argsstring></argsstring>
+        <name>playerTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ItemSpawner.maxDistance</definition>
+        <argsstring></argsstring>
+        <name>maxDistance</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="10" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" compoundref="_item_spawner_8cs" startline="33" endline="42">Spawn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ItemSpawner.timeBetSpawnMax</definition>
+        <argsstring></argsstring>
+        <name>timeBetSpawnMax</name>
+        <initializer>= 7f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="14" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" compoundref="_item_spawner_8cs" startline="17" endline="21">Start</referencedby>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ItemSpawner.timeBetSpawnMin</definition>
+        <argsstring></argsstring>
+        <name>timeBetSpawnMin</name>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="15" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" compoundref="_item_spawner_8cs" startline="17" endline="21">Start</referencedby>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ItemSpawner.lastSpawnTime</definition>
+        <argsstring></argsstring>
+        <name>lastSpawnTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="9" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" compoundref="_item_spawner_8cs" startline="17" endline="21">Start</referencedby>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ItemSpawner.timeBetSpawn</definition>
+        <argsstring></argsstring>
+        <name>timeBetSpawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" compoundref="_item_spawner_8cs" startline="17" endline="21">Start</referencedby>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ItemSpawner.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="17" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="17" bodyend="21"/>
+        <references refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" compoundref="_item_spawner_8cs" startline="9">lastSpawnTime</references>
+        <references refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" compoundref="_item_spawner_8cs" startline="12">timeBetSpawn</references>
+        <references refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" compoundref="_item_spawner_8cs" startline="14">timeBetSpawnMax</references>
+        <references refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" compoundref="_item_spawner_8cs" startline="15">timeBetSpawnMin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ItemSpawner.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="23" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="23" bodyend="31"/>
+        <references refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" compoundref="_item_spawner_8cs" startline="9">lastSpawnTime</references>
+        <references refid="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" compoundref="_item_spawner_8cs" startline="7">playerTransform</references>
+        <references refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" compoundref="_item_spawner_8cs" startline="33" endline="42">Spawn</references>
+        <references refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" compoundref="_item_spawner_8cs" startline="12">timeBetSpawn</references>
+        <references refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" compoundref="_item_spawner_8cs" startline="14">timeBetSpawnMax</references>
+        <references refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" compoundref="_item_spawner_8cs" startline="15">timeBetSpawnMin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ItemSpawner.Spawn</definition>
+        <argsstring>()</argsstring>
+        <name>Spawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="33" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="33" bodyend="42"/>
+        <references refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" compoundref="_item_spawner_8cs" startline="6">items</references>
+        <references refid="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" compoundref="_item_spawner_8cs" startline="10">maxDistance</references>
+        <referencedby refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" compoundref="_item_spawner_8cs" startline="23" endline="31">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="63">
+        <label>ItemSpawner</label>
+        <link refid="class_item_spawner"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>ItemSpawner</label>
+        <link refid="class_item_spawner"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs" bodystart="4" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" prot="public" virt="non-virtual"><scope>ItemSpawner</scope><name>items</name></member>
+      <member refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" prot="private" virt="non-virtual"><scope>ItemSpawner</scope><name>lastSpawnTime</name></member>
+      <member refid="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" prot="public" virt="non-virtual"><scope>ItemSpawner</scope><name>maxDistance</name></member>
+      <member refid="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" prot="public" virt="non-virtual"><scope>ItemSpawner</scope><name>playerTransform</name></member>
+      <member refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" prot="private" virt="non-virtual"><scope>ItemSpawner</scope><name>Spawn</name></member>
+      <member refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" prot="private" virt="non-virtual"><scope>ItemSpawner</scope><name>Start</name></member>
+      <member refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" prot="private" virt="non-virtual"><scope>ItemSpawner</scope><name>timeBetSpawn</name></member>
+      <member refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" prot="public" virt="non-virtual"><scope>ItemSpawner</scope><name>timeBetSpawnMax</name></member>
+      <member refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" prot="public" virt="non-virtual"><scope>ItemSpawner</scope><name>timeBetSpawnMin</name></member>
+      <member refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" prot="private" virt="non-virtual"><scope>ItemSpawner</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

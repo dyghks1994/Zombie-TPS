@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_late_update_follow" kind="class" prot="public">
+    <compoundname>LateUpdateFollow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_late_update_follow_1a506d750dfa8150d039da87ef3cc5d7a2" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform LateUpdateFollow.targetToFollow</definition>
+        <argsstring></argsstring>
+        <name>targetToFollow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_late_update_follow_1af24a09d068617e79e9739ca254258231" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LateUpdateFollow.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="67">
+        <label>LateUpdateFollow</label>
+        <link refid="class_late_update_follow"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="69">
+        <label>LateUpdateFollow</label>
+        <link refid="class_late_update_follow"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/LateUpdateFollow.cs" bodystart="3" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_late_update_follow_1af24a09d068617e79e9739ca254258231" prot="private" virt="non-virtual"><scope>LateUpdateFollow</scope><name>LateUpdate</name></member>
+      <member refid="class_late_update_follow_1a506d750dfa8150d039da87ef3cc5d7a2" prot="public" virt="non-virtual"><scope>LateUpdateFollow</scope><name>targetToFollow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

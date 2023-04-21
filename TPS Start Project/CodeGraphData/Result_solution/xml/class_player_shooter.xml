@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_shooter" kind="class" prot="public">
+    <compoundname>PlayerShooter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_player_shooter_1a540038433eb0dece0d9a139666f56326" prot="public" static="no">
+        <name>AimState</name>
+        <enumvalue id="class_player_shooter_1a540038433eb0dece0d9a139666f56326ae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_player_shooter_1a540038433eb0dece0d9a139666f56326ab38ad52317960916202adad641f41b37" prot="public">
+          <name>HipFire</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="6" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" kindref="member">AimState</ref></type>
+        <definition>AimState PlayerShooter.aimState</definition>
+        <argsstring></argsstring>
+        <name>aimState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="12" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_player_movement_1a0caaa871b9ef680c9f02bd0e22c77db1" compoundref="_player_movement_8cs" startline="36" endline="43">PlayerMovement.FixedUpdate</referencedby>
+        <referencedby refid="class_player_shooter_1a6cdfba8fa537b800b23595ef2132500d" compoundref="_player_shooter_8cs" startline="51" endline="56">OnDisable</referencedby>
+        <referencedby refid="class_player_shooter_1a25bc0d255416f7ef794751dd0fa10256" compoundref="_player_shooter_8cs" startline="43" endline="49">OnEnable</referencedby>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</referencedby>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gun" kindref="compound">Gun</ref></type>
+        <definition>Gun PlayerShooter.gun</definition>
+        <argsstring></argsstring>
+        <name>gun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="14" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" compoundref="_player_shooter_8cs" startline="160" endline="172">OnAnimatorIK</referencedby>
+        <referencedby refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" compoundref="_player_shooter_8cs" startline="119" endline="125">Reload</referencedby>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</referencedby>
+        <referencedby refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">UpdateAimTarget</referencedby>
+        <referencedby refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" compoundref="_player_shooter_8cs" startline="150" endline="158">UpdateUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask PlayerShooter.excludeTarget</definition>
+        <argsstring></argsstring>
+        <name>excludeTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="15" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a48c91fee7af23520468c4ccc7391036c" compoundref="_player_shooter_8cs" startline="28" endline="34">Awake</referencedby>
+        <referencedby refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">UpdateAimTarget</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_input" kindref="compound">PlayerInput</ref></type>
+        <definition>PlayerInput PlayerShooter.playerInput</definition>
+        <argsstring></argsstring>
+        <name>playerInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="17" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">FixedUpdate</referencedby>
+        <referencedby refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" compoundref="_player_shooter_8cs" startline="36" endline="41">Start</referencedby>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator PlayerShooter.playerAnimator</definition>
+        <argsstring></argsstring>
+        <name>playerAnimator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="18" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" compoundref="_player_shooter_8cs" startline="36" endline="41">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" prot="private" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera PlayerShooter.playerCamera</definition>
+        <argsstring></argsstring>
+        <name>playerCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="19" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" compoundref="_player_shooter_8cs" startline="36" endline="41">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerShooter.waitingTimeForReleaseingAim</definition>
+        <argsstring></argsstring>
+        <name>waitingTimeForReleaseingAim</name>
+        <initializer>= 2.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="21" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerShooter.lastFireInputTime</definition>
+        <argsstring></argsstring>
+        <name>lastFireInputTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="22" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">FixedUpdate</referencedby>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 PlayerShooter.aimPoint</definition>
+        <argsstring></argsstring>
+        <name>aimPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="24" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</referencedby>
+        <referencedby refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">UpdateAimTarget</referencedby>
+        <referencedby refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" compoundref="_player_shooter_8cs" startline="150" endline="158">UpdateUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerShooter.linedUp</definition>
+        <argsstring></argsstring>
+        <name>linedUp</name>
+        <initializer>=&gt; !(Mathf.Abs( playerCamera.transform.eulerAngles.y - transform.eulerAngles.y) &gt; 1f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerShooter.hasEnoughDistance</definition>
+        <argsstring></argsstring>
+        <name>hasEnoughDistance</name>
+        <initializer>=&gt; !Physics.Linecast(transform.position + Vector3.up * gun.fireTransform.position.y,gun.fireTransform.position, ~<ref refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" kindref="member">excludeTarget</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="26" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</referencedby>
+        <referencedby refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" compoundref="_player_shooter_8cs" startline="150" endline="158">UpdateUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_shooter_1a48c91fee7af23520468c4ccc7391036c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="28" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="28" bodyend="34"/>
+        <references refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" compoundref="_player_shooter_8cs" startline="15">excludeTarget</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="36" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="36" bodyend="41"/>
+        <references refid="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" compoundref="_player_shooter_8cs" startline="18">playerAnimator</references>
+        <references refid="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" compoundref="_player_shooter_8cs" startline="19">playerCamera</references>
+        <references refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" compoundref="_player_shooter_8cs" startline="17">playerInput</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a25bc0d255416f7ef794751dd0fa10256" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="43" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="43" bodyend="49"/>
+        <references refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" compoundref="_player_shooter_8cs" startline="12">aimState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a6cdfba8fa537b800b23595ef2132500d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="51" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="51" bodyend="56"/>
+        <references refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" compoundref="_player_shooter_8cs" startline="12">aimState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="58" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="58" bodyend="69"/>
+        <references refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" compoundref="_player_input_8cs" startline="12">PlayerInput.fire</references>
+        <references refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" compoundref="_player_shooter_8cs" startline="22">lastFireInputTime</references>
+        <references refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" compoundref="_player_shooter_8cs" startline="17">playerInput</references>
+        <references refid="class_player_input_1a02e0669200b02197394bddc68bfc8d9a" compoundref="_player_input_8cs" startline="13">PlayerInput.reload</references>
+        <references refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" compoundref="_player_shooter_8cs" startline="119" endline="125">Reload</references>
+        <references refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">Shoot</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="71" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="71" bodyend="90"/>
+        <references refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" compoundref="_player_shooter_8cs" startline="12">aimState</references>
+        <references refid="class_player_input_1af6898b2b9963c18e81b3c9b390aa20f1" compoundref="_player_input_8cs" startline="12">PlayerInput.fire</references>
+        <references refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" compoundref="_player_shooter_8cs" startline="22">lastFireInputTime</references>
+        <references refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" compoundref="_player_shooter_8cs" startline="17">playerInput</references>
+        <references refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">UpdateAimTarget</references>
+        <references refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" compoundref="_player_shooter_8cs" startline="150" endline="158">UpdateUI</references>
+        <references refid="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" compoundref="_player_shooter_8cs" startline="21">waitingTimeForReleaseingAim</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.UpdateAimTarget</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateAimTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="127" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="127" bodyend="148"/>
+        <references refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" compoundref="_player_shooter_8cs" startline="24">aimPoint</references>
+        <references refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" compoundref="_player_shooter_8cs" startline="15">excludeTarget</references>
+        <references refid="class_gun_1a2f24745a0810a937385acf841a23b66b" compoundref="_gun_8cs" startline="29">Gun.fireDistance</references>
+        <references refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" compoundref="_gun_8cs" startline="25">Gun.fireTransform</references>
+        <references refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" compoundref="_player_shooter_8cs" startline="14">gun</references>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.UpdateUI</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="150" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="150" bodyend="158"/>
+        <references refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" compoundref="_player_shooter_8cs" startline="24">aimPoint</references>
+        <references refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" compoundref="_player_shooter_8cs" startline="14">gun</references>
+        <references refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" compoundref="_player_shooter_8cs" startline="26">hasEnoughDistance</references>
+        <references refid="class_u_i_manager_1a006246dc7fcecbe2387d70731191d4f6" compoundref="_u_i_manager_8cs" startline="10">UIManager.Instance</references>
+        <referencedby refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" compoundref="_player_shooter_8cs" startline="71" endline="90">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.OnAnimatorIK</definition>
+        <argsstring>(int layerIndex)</argsstring>
+        <name>OnAnimatorIK</name>
+        <param>
+          <type>int</type>
+          <declname>layerIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="160" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="160" bodyend="172"/>
+        <references refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" compoundref="_player_shooter_8cs" startline="14">gun</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">Gun.state</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.Shoot</definition>
+        <argsstring>()</argsstring>
+        <name>Shoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="92" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="92" bodyend="117"/>
+        <references refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" compoundref="_player_shooter_8cs" startline="24">aimPoint</references>
+        <references refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" compoundref="_player_shooter_8cs" startline="12">aimState</references>
+        <references refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Gun.Fire</references>
+        <references refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" compoundref="_player_shooter_8cs" startline="14">gun</references>
+        <references refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" compoundref="_player_shooter_8cs" startline="26">hasEnoughDistance</references>
+        <references refid="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" compoundref="_player_shooter_8cs" startline="25">linedUp</references>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">FixedUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerShooter.Reload</definition>
+        <argsstring>()</argsstring>
+        <name>Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="119" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="119" bodyend="125"/>
+        <references refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" compoundref="_player_shooter_8cs" startline="14">gun</references>
+        <references refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" compoundref="_gun_8cs" startline="158" endline="168">Gun.Reload</references>
+        <referencedby refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" compoundref="_player_shooter_8cs" startline="58" endline="69">FixedUpdate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="109">
+        <label>PlayerShooter</label>
+        <link refid="class_player_shooter"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="113">
+        <label>PlayerInput</label>
+        <link refid="class_player_input"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>PlayerShooter</label>
+        <link refid="class_player_shooter"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="113" relation="usage">
+          <edgelabel>playerInput</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>gun</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="114">
+        <label>Gun</label>
+        <link refid="class_gun"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>gunHolder</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/PlayerShooter.cs" bodystart="4" bodyend="173"/>
+    <listofallmembers>
+      <member refid="class_player_shooter_1afdb9bba53de9334754e2c4e865fefd27" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>aimPoint</name></member>
+      <member refid="class_player_shooter_1a540038433eb0dece0d9a139666f56326" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>AimState</name></member>
+      <member refid="class_player_shooter_1a2145f8f74649ba13754d383d4909f40e" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>aimState</name></member>
+      <member refid="class_player_shooter_1a48c91fee7af23520468c4ccc7391036c" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>Awake</name></member>
+      <member refid="class_player_shooter_1a8964bbbac213325142babfaffc1f9210" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>excludeTarget</name></member>
+      <member refid="class_player_shooter_1a04d8cac6293fe53598e136e6d93e34ee" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>FixedUpdate</name></member>
+      <member refid="class_player_shooter_1ab8fcb6f3636e9fc7b2e897cd7bb727e6" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>gun</name></member>
+      <member refid="class_player_shooter_1a3546b0029b6b728f2fcdfc679d35e210" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>hasEnoughDistance</name></member>
+      <member refid="class_player_shooter_1a3ec5c6cdea9a1020e61b511717918bb1" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>lastFireInputTime</name></member>
+      <member refid="class_player_shooter_1a595a3dfcd75f25ca4962e760187e6a12" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>linedUp</name></member>
+      <member refid="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>OnAnimatorIK</name></member>
+      <member refid="class_player_shooter_1a6cdfba8fa537b800b23595ef2132500d" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>OnDisable</name></member>
+      <member refid="class_player_shooter_1a25bc0d255416f7ef794751dd0fa10256" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>OnEnable</name></member>
+      <member refid="class_player_shooter_1aee688e0c4c9fa9a77fbe05cf5c719a71" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>playerAnimator</name></member>
+      <member refid="class_player_shooter_1ae14c1f1b91bee87e98692f960c7dd633" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>playerCamera</name></member>
+      <member refid="class_player_shooter_1a102c174407dc79cf2f049e2cade0ce11" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>playerInput</name></member>
+      <member refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>Reload</name></member>
+      <member refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" prot="public" virt="non-virtual"><scope>PlayerShooter</scope><name>Shoot</name></member>
+      <member refid="class_player_shooter_1a2ee49f555055b68fd0b2bceb1a6b20e1" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>Start</name></member>
+      <member refid="class_player_shooter_1a37464604941834db2c4b1a6afe11af13" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>Update</name></member>
+      <member refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>UpdateAimTarget</name></member>
+      <member refid="class_player_shooter_1a58a824a6d55b415a8749e675682c042c" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>UpdateUI</name></member>
+      <member refid="class_player_shooter_1a11ec2f596b3c48a19756d0bc7eb733c8" prot="private" virt="non-virtual"><scope>PlayerShooter</scope><name>waitingTimeForReleaseingAim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

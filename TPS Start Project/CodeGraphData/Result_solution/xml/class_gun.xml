@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_gun" kind="class" prot="public">
+    <compoundname>Gun</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_gun_1aa89b5029ef97407fab497b5f485f18ef" prot="public" static="no">
+        <name>State</name>
+        <enumvalue id="class_gun_1aa89b5029ef97407fab497b5f485f18efae7d31fc0602fb2ede144d18cdffd816b" prot="public">
+          <name>Ready</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gun_1aa89b5029ef97407fab497b5f485f18eface2c8aed9c2fa0cfbed56cbda4d8bf07" prot="public">
+          <name>Empty</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gun_1aa89b5029ef97407fab497b5f485f18efa1046222ea676e1c79b0f8d955cf3a55c" prot="public">
+          <name>Reloading</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="8" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="7" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_gun_1a203e03d9556efa1f55ea7be43d769307" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref></type>
+        <definition>State Gun.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="13" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+        <referencedby refid="class_player_shooter_1a2959c07e79c129d6cc6d3fe324bfb8e1" compoundref="_player_shooter_8cs" startline="160" endline="172">PlayerShooter.OnAnimatorIK</referencedby>
+        <referencedby refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" compoundref="_gun_8cs" startline="64" endline="70">OnEnable</referencedby>
+        <referencedby refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" compoundref="_gun_8cs" startline="158" endline="168">Reload</referencedby>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_shooter" kindref="compound">PlayerShooter</ref></type>
+        <definition>PlayerShooter Gun.gunHolder</definition>
+        <argsstring></argsstring>
+        <name>gunHolder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="15" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" compoundref="_gun_8cs" startline="58" endline="62">Setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer Gun.bulletLineRenderer</definition>
+        <argsstring></argsstring>
+        <name>bulletLineRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="16" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" compoundref="_gun_8cs" startline="48" endline="56">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1abb0284f70c103c8c209942dce9b8bee0" prot="private" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource Gun.gunAudioPlayer</definition>
+        <argsstring></argsstring>
+        <name>gunAudioPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="18" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" compoundref="_gun_8cs" startline="48" endline="56">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a4073c1162e3b10885f64081122e747d3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.currentSpread</definition>
+        <argsstring></argsstring>
+        <name>currentSpread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="41" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+        <referencedby refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" compoundref="_gun_8cs" startline="64" endline="70">OnEnable</referencedby>
+        <referencedby refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" compoundref="_gun_8cs" startline="187" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.currentSpreadVelocity</definition>
+        <argsstring></argsstring>
+        <name>currentSpreadVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="42" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" compoundref="_gun_8cs" startline="187" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1ae6119a33df86624b68e203a975b7be8b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.lastFireTime</definition>
+        <argsstring></argsstring>
+        <name>lastFireTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="44" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+        <referencedby refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" compoundref="_gun_8cs" startline="64" endline="70">OnEnable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Gun.excludeTarget</definition>
+        <argsstring></argsstring>
+        <name>excludeTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="46" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" compoundref="_gun_8cs" startline="58" endline="62">Setup</referencedby>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gun_1ad9870f9245a45b44d828420e162695e3" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip Gun.shotClip</definition>
+        <argsstring></argsstring>
+        <name>shotClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="19" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" compoundref="_gun_8cs" startline="142" endline="156">ShotEffect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip Gun.reloadClip</definition>
+        <argsstring></argsstring>
+        <name>reloadClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="20" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1ae8db9fec6449a8bc896db27376a60a9d" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem Gun.muzzleFlashEffect</definition>
+        <argsstring></argsstring>
+        <name>muzzleFlashEffect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="22" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a5b8551dca000a8141e1d3e0fc4b13bdc" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem Gun.shellEjectEffect</definition>
+        <argsstring></argsstring>
+        <name>shellEjectEffect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="23" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Gun.fireTransform</definition>
+        <argsstring></argsstring>
+        <name>fireTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+        <referencedby refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">PlayerShooter.UpdateAimTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1adcb0024eec33ba6464c6b15b4805baf9" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Gun.leftHandMount</definition>
+        <argsstring></argsstring>
+        <name>leftHandMount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="26" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1ac43918c974e6f366fb92b77252f2e054" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="28" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a2f24745a0810a937385acf841a23b66b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.fireDistance</definition>
+        <argsstring></argsstring>
+        <name>fireDistance</name>
+        <initializer>= 100f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="29" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+        <referencedby refid="class_player_shooter_1ace5ebed3d285c4a264adf38e1b280b9e" compoundref="_player_shooter_8cs" startline="127" endline="148">PlayerShooter.UpdateAimTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a0e8248bfae9a95803ba33087c77b6080" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gun.ammoRemain</definition>
+        <argsstring></argsstring>
+        <name>ammoRemain</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="31" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gun.magAmmo</definition>
+        <argsstring></argsstring>
+        <name>magAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="32" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" compoundref="_gun_8cs" startline="64" endline="70">OnEnable</referencedby>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a4102eca38dc877e833eea98acf75583c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gun.magCapacity</definition>
+        <argsstring></argsstring>
+        <name>magCapacity</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="33" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" compoundref="_gun_8cs" startline="64" endline="70">OnEnable</referencedby>
+        <referencedby refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" compoundref="_gun_8cs" startline="158" endline="168">Reload</referencedby>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a94863ab87426477ddfd21b9e591d610b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.timeBetFire</definition>
+        <argsstring></argsstring>
+        <name>timeBetFire</name>
+        <initializer>= 0.12f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="35" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.reloadTime</definition>
+        <argsstring></argsstring>
+        <name>reloadTime</name>
+        <initializer>= 1.8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="36" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.maxSpread</definition>
+        <argsstring></argsstring>
+        <name>maxSpread</name>
+        <initializer>= 3f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="38" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" compoundref="_gun_8cs" startline="187" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.stability</definition>
+        <argsstring></argsstring>
+        <name>stability</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="39" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gun_1a994623bce174aff950a9e6612345947a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Gun.restoreFromRecoilSpeed</definition>
+        <argsstring></argsstring>
+        <name>restoreFromRecoilSpeed</name>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="40" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" compoundref="_gun_8cs" startline="187" endline="192">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="48" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="48" bodyend="56"/>
+        <references refid="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" compoundref="_gun_8cs" startline="16">bulletLineRenderer</references>
+        <references refid="class_gun_1abb0284f70c103c8c209942dce9b8bee0" compoundref="_gun_8cs" startline="18">gunAudioPlayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1a6bc859722c423edf378924ac8449aa5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="64" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="64" bodyend="70"/>
+        <references refid="class_gun_1a4073c1162e3b10885f64081122e747d3" compoundref="_gun_8cs" startline="41">currentSpread</references>
+        <references refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" compoundref="_gun_8cs" startline="44">lastFireTime</references>
+        <references refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" compoundref="_gun_8cs" startline="32">magAmmo</references>
+        <references refid="class_gun_1a4102eca38dc877e833eea98acf75583c" compoundref="_gun_8cs" startline="33">magCapacity</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1adba7bd46c2b16439942926818fd814f6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="72" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.Shot</definition>
+        <argsstring>(Vector3 startPoint, Vector3 direction)</argsstring>
+        <name>Shot</name>
+        <param>
+          <type>Vector3</type>
+          <declname>startPoint</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="98" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="98" bodyend="140"/>
+        <references refid="class_gun_1ac43918c974e6f366fb92b77252f2e054" compoundref="_gun_8cs" startline="28">damage</references>
+        <references refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" compoundref="_gun_8cs" startline="46">excludeTarget</references>
+        <references refid="class_gun_1a2f24745a0810a937385acf841a23b66b" compoundref="_gun_8cs" startline="29">fireDistance</references>
+        <references refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" compoundref="_gun_8cs" startline="32">magAmmo</references>
+        <references refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" compoundref="_gun_8cs" startline="142" endline="156">ShotEffect</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">state</references>
+        <referencedby refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" compoundref="_gun_8cs" startline="77" endline="96">Fire</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1aa4c01a280eca3747ae59c1be09660d47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Gun.ShotEffect</definition>
+        <argsstring>(Vector3 hitPosition)</argsstring>
+        <name>ShotEffect</name>
+        <param>
+          <type>Vector3</type>
+          <declname>hitPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="142" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="142" bodyend="156"/>
+        <references refid="class_gun_1ad9870f9245a45b44d828420e162695e3" compoundref="_gun_8cs" startline="19">shotClip</references>
+        <referencedby refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1ae8753dc968a445385a0b9b2214a2022d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Gun.ReloadRoutine</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadRoutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="170" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="170" bodyend="185"/>
+        <references refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" compoundref="_gun_8cs" startline="31">ammoRemain</references>
+        <references refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" compoundref="_gun_8cs" startline="32">magAmmo</references>
+        <references refid="class_gun_1a4102eca38dc877e833eea98acf75583c" compoundref="_gun_8cs" startline="33">magCapacity</references>
+        <references refid="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" compoundref="_gun_8cs" startline="20">reloadClip</references>
+        <references refid="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" compoundref="_gun_8cs" startline="36">reloadTime</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">state</references>
+        <referencedby refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" compoundref="_gun_8cs" startline="158" endline="168">Reload</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="187" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="187" bodyend="192"/>
+        <references refid="class_gun_1a4073c1162e3b10885f64081122e747d3" compoundref="_gun_8cs" startline="41">currentSpread</references>
+        <references refid="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" compoundref="_gun_8cs" startline="42">currentSpreadVelocity</references>
+        <references refid="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" compoundref="_gun_8cs" startline="38">maxSpread</references>
+        <references refid="class_gun_1a994623bce174aff950a9e6612345947a" compoundref="_gun_8cs" startline="40">restoreFromRecoilSpeed</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.Setup</definition>
+        <argsstring>(PlayerShooter gunHolder)</argsstring>
+        <name>Setup</name>
+        <param>
+          <type><ref refid="class_player_shooter" kindref="compound">PlayerShooter</ref></type>
+          <declname>gunHolder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="58" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="58" bodyend="62"/>
+        <references refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" compoundref="_gun_8cs" startline="46">excludeTarget</references>
+        <references refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" compoundref="_gun_8cs" startline="15">gunHolder</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gun.Fire</definition>
+        <argsstring>(Vector3 aimTarget)</argsstring>
+        <name>Fire</name>
+        <param>
+          <type>Vector3</type>
+          <declname>aimTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="77" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="77" bodyend="96"/>
+        <references refid="class_gun_1a4073c1162e3b10885f64081122e747d3" compoundref="_gun_8cs" startline="41">currentSpread</references>
+        <references refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" compoundref="_gun_8cs" startline="25">fireTransform</references>
+        <references refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" compoundref="_gun_8cs" startline="44">lastFireTime</references>
+        <references refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" compoundref="_gun_8cs" startline="98" endline="140">Shot</references>
+        <references refid="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" compoundref="_gun_8cs" startline="39">stability</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">state</references>
+        <references refid="class_gun_1a94863ab87426477ddfd21b9e591d610b" compoundref="_gun_8cs" startline="35">timeBetFire</references>
+        <referencedby refid="class_player_shooter_1ad5d5901d5f15f7a2ca0a6e02359b2753" compoundref="_player_shooter_8cs" startline="92" endline="117">PlayerShooter.Shoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gun.Reload</definition>
+        <argsstring>()</argsstring>
+        <name>Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="158" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="158" bodyend="168"/>
+        <references refid="class_gun_1a4102eca38dc877e833eea98acf75583c" compoundref="_gun_8cs" startline="33">magCapacity</references>
+        <references refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" compoundref="_gun_8cs" startline="170" endline="185">ReloadRoutine</references>
+        <references refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" compoundref="_gun_8cs" startline="13">state</references>
+        <referencedby refid="class_player_shooter_1a60de71440fba91172aa27f1c4a2d8041" compoundref="_player_shooter_8cs" startline="119" endline="125">PlayerShooter.Reload</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="41">
+        <label>Gun</label>
+        <link refid="class_gun"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>PlayerInput</label>
+        <link refid="class_player_input"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>PlayerShooter</label>
+        <link refid="class_player_shooter"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>playerInput</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>gun</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="43">
+        <label>Gun</label>
+        <link refid="class_gun"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>gunHolder</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" line="6" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs" bodystart="5" bodyend="193"/>
+    <listofallmembers>
+      <member refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" prot="public" virt="non-virtual"><scope>Gun</scope><name>ammoRemain</name></member>
+      <member refid="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" prot="private" virt="non-virtual"><scope>Gun</scope><name>Awake</name></member>
+      <member refid="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" prot="private" virt="non-virtual"><scope>Gun</scope><name>bulletLineRenderer</name></member>
+      <member refid="class_gun_1a4073c1162e3b10885f64081122e747d3" prot="private" virt="non-virtual"><scope>Gun</scope><name>currentSpread</name></member>
+      <member refid="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" prot="private" virt="non-virtual"><scope>Gun</scope><name>currentSpreadVelocity</name></member>
+      <member refid="class_gun_1ac43918c974e6f366fb92b77252f2e054" prot="public" virt="non-virtual"><scope>Gun</scope><name>damage</name></member>
+      <member refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" prot="private" virt="non-virtual"><scope>Gun</scope><name>excludeTarget</name></member>
+      <member refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" prot="public" virt="non-virtual"><scope>Gun</scope><name>Fire</name></member>
+      <member refid="class_gun_1a2f24745a0810a937385acf841a23b66b" prot="public" virt="non-virtual"><scope>Gun</scope><name>fireDistance</name></member>
+      <member refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" prot="public" virt="non-virtual"><scope>Gun</scope><name>fireTransform</name></member>
+      <member refid="class_gun_1abb0284f70c103c8c209942dce9b8bee0" prot="private" virt="non-virtual"><scope>Gun</scope><name>gunAudioPlayer</name></member>
+      <member refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" prot="private" virt="non-virtual"><scope>Gun</scope><name>gunHolder</name></member>
+      <member refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" prot="private" virt="non-virtual"><scope>Gun</scope><name>lastFireTime</name></member>
+      <member refid="class_gun_1adcb0024eec33ba6464c6b15b4805baf9" prot="public" virt="non-virtual"><scope>Gun</scope><name>leftHandMount</name></member>
+      <member refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" prot="public" virt="non-virtual"><scope>Gun</scope><name>magAmmo</name></member>
+      <member refid="class_gun_1a4102eca38dc877e833eea98acf75583c" prot="public" virt="non-virtual"><scope>Gun</scope><name>magCapacity</name></member>
+      <member refid="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" prot="public" virt="non-virtual"><scope>Gun</scope><name>maxSpread</name></member>
+      <member refid="class_gun_1ae8db9fec6449a8bc896db27376a60a9d" prot="public" virt="non-virtual"><scope>Gun</scope><name>muzzleFlashEffect</name></member>
+      <member refid="class_gun_1adba7bd46c2b16439942926818fd814f6" prot="private" virt="non-virtual"><scope>Gun</scope><name>OnDisable</name></member>
+      <member refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" prot="private" virt="non-virtual"><scope>Gun</scope><name>OnEnable</name></member>
+      <member refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" prot="public" virt="non-virtual"><scope>Gun</scope><name>Reload</name></member>
+      <member refid="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" prot="public" virt="non-virtual"><scope>Gun</scope><name>reloadClip</name></member>
+      <member refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" prot="private" virt="non-virtual"><scope>Gun</scope><name>ReloadRoutine</name></member>
+      <member refid="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" prot="public" virt="non-virtual"><scope>Gun</scope><name>reloadTime</name></member>
+      <member refid="class_gun_1a994623bce174aff950a9e6612345947a" prot="public" virt="non-virtual"><scope>Gun</scope><name>restoreFromRecoilSpeed</name></member>
+      <member refid="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" prot="public" virt="non-virtual"><scope>Gun</scope><name>Setup</name></member>
+      <member refid="class_gun_1a5b8551dca000a8141e1d3e0fc4b13bdc" prot="public" virt="non-virtual"><scope>Gun</scope><name>shellEjectEffect</name></member>
+      <member refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" prot="private" virt="non-virtual"><scope>Gun</scope><name>Shot</name></member>
+      <member refid="class_gun_1ad9870f9245a45b44d828420e162695e3" prot="public" virt="non-virtual"><scope>Gun</scope><name>shotClip</name></member>
+      <member refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" prot="private" virt="non-virtual"><scope>Gun</scope><name>ShotEffect</name></member>
+      <member refid="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" prot="public" virt="non-virtual"><scope>Gun</scope><name>stability</name></member>
+      <member refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" prot="public" virt="non-virtual"><scope>Gun</scope><name>state</name></member>
+      <member refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" prot="public" virt="non-virtual"><scope>Gun</scope><name>State</name></member>
+      <member refid="class_gun_1a94863ab87426477ddfd21b9e591d610b" prot="public" virt="non-virtual"><scope>Gun</scope><name>timeBetFire</name></member>
+      <member refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" prot="private" virt="non-virtual"><scope>Gun</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

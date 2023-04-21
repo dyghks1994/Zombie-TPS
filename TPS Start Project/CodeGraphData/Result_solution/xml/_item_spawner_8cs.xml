@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_item_spawner_8cs" kind="file">
+    <compoundname>ItemSpawner.cs</compoundname>
+    <innerclass refid="class_item_spawner" prot="public">ItemSpawner</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.AI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_item_spawner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_item_spawner" kindref="compound">ItemSpawner</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject[]<sp/><ref refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" kindref="member">items</ref>;</highlight></codeline>
+<codeline lineno="7" refid="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Transform<sp/><ref refid="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" kindref="member">playerTransform</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" kindref="member">lastSpawnTime</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" kindref="member">maxDistance</ref><sp/>=<sp/>5f;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12" refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" kindref="member">timeBetSpawn</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" kindref="member">timeBetSpawnMax</ref><sp/>=<sp/>7f;</highlight></codeline>
+<codeline lineno="15" refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" kindref="member">timeBetSpawnMin</ref><sp/>=<sp/>2f;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a8747f1740ce252a8676120567abd16e6" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" kindref="member">timeBetSpawn</ref><sp/>=<sp/>Random.Range(<ref refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" kindref="member">timeBetSpawnMin</ref>,<sp/><ref refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" kindref="member">timeBetSpawnMax</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" kindref="member">lastSpawnTime</ref><sp/>=<sp/>0f;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a70c81d0ba5132fe95be58fe28876d2b6" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Time.time<sp/>&gt;=<sp/><ref refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" kindref="member">lastSpawnTime</ref><sp/>+<sp/><ref refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" kindref="member">timeBetSpawn</ref><sp/>&amp;&amp;<sp/><ref refid="class_item_spawner_1ae8bec0683074db82bc8cd7e240d93052" kindref="member">playerTransform</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" kindref="member">Spawn</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_item_spawner_1a0a33aa6ef6e9dddc5d69c1e2f5991e1f" kindref="member">lastSpawnTime</ref><sp/>=<sp/>Time.time;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_item_spawner_1aa5f6f22b9a37b7485dc6e8dc97cc9aae" kindref="member">timeBetSpawn</ref><sp/>=<sp/>Random.Range(<ref refid="class_item_spawner_1a3309777416958577a6d7e717d6f836cf" kindref="member">timeBetSpawnMin</ref>,<sp/><ref refid="class_item_spawner_1a17935c486229d9845fd95f224df47a6a" kindref="member">timeBetSpawnMax</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_item_spawner_1a602757b89d323b96ace3ae3af1f26096" kindref="member">Spawn</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>spawnPosition<sp/>=<sp/>Utility.GetRandomPointOnNavMesh(playerTransform.position,<sp/><ref refid="class_item_spawner_1afe91043a28ae31bcffdcd836880db100" kindref="member">maxDistance</ref>,<sp/>NavMesh.AllAreas);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spawnPosition<sp/>+=<sp/>Vector3.up<sp/>*<sp/>0.5f;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>item<sp/>=<sp/>Instantiate(<ref refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" kindref="member">items</ref>[Random.Range(0,<sp/><ref refid="class_item_spawner_1a2d1e950dc8e77c56cf47106ce6e877f7" kindref="member">items</ref>.Length)],<sp/>spawnPosition,<sp/>Quaternion.identity);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy(item,<sp/>5f);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/ItemSpawner.cs"/>
+  </compounddef>
+</doxygen>

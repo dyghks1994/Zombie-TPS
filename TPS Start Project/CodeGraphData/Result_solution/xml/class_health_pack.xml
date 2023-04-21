@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_health_pack" kind="class" prot="public">
+    <compoundname>HealthPack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_item" prot="public" virt="non-virtual">IItem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_health_pack_1a3f700e60adf851e462ac99c6920d11a8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HealthPack.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_health_pack_1a8b5dc4a92e214ebee0bee9e3c4645a24" compoundref="_health_pack_8cs" startline="7" endline="17">Use</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_health_pack_1a8b5dc4a92e214ebee0bee9e3c4645a24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HealthPack.Use</definition>
+        <argsstring>(GameObject target)</argsstring>
+        <name>Use</name>
+        <reimplements refid="interface_i_item_1a080bfd1d0a4d58b5984ee3e3eedcd2e0">Use</reimplements>
+        <param>
+          <type>GameObject</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" bodystart="7" bodyend="17"/>
+        <references refid="class_health_pack_1a3f700e60adf851e462ac99c6920d11a8" compoundref="_health_pack_8cs" startline="5">health</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>HealthPack</label>
+        <link refid="class_health_pack"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="49">
+        <label>IItem</label>
+        <link refid="interface_i_item"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="50">
+        <label>HealthPack</label>
+        <link refid="class_health_pack"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="52">
+        <label>IItem</label>
+        <link refid="interface_i_item"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/HealthPack.cs" bodystart="3" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_health_pack_1a3f700e60adf851e462ac99c6920d11a8" prot="public" virt="non-virtual"><scope>HealthPack</scope><name>health</name></member>
+      <member refid="class_health_pack_1a8b5dc4a92e214ebee0bee9e3c4645a24" prot="public" virt="non-virtual"><scope>HealthPack</scope><name>Use</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

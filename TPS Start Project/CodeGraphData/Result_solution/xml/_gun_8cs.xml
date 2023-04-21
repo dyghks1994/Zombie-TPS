@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_gun_8cs" kind="file">
+    <compoundname>Gun.cs</compoundname>
+    <innerclass refid="class_gun" prot="public">Gun</innerclass>
+    <innernamespace refid="namespace_system">System</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_gun" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gun" kindref="compound">Gun</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18efae7d31fc0602fb2ede144d18cdffd816b" kindref="member">Ready</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18eface2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">Empty</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18efa1046222ea676e1c79b0f8d955cf3a55c" kindref="member">Reloading</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13" refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref><sp/><ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="class_player_shooter" kindref="compound">PlayerShooter</ref><sp/><ref refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" kindref="member">gunHolder</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>LineRenderer<sp/><ref refid="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" kindref="member">bulletLineRenderer</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="class_gun_1abb0284f70c103c8c209942dce9b8bee0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>AudioSource<sp/><ref refid="class_gun_1abb0284f70c103c8c209942dce9b8bee0" kindref="member">gunAudioPlayer</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_gun_1ad9870f9245a45b44d828420e162695e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AudioClip<sp/><ref refid="class_gun_1ad9870f9245a45b44d828420e162695e3" kindref="member">shotClip</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AudioClip<sp/><ref refid="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" kindref="member">reloadClip</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="class_gun_1ae8db9fec6449a8bc896db27376a60a9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ParticleSystem<sp/><ref refid="class_gun_1ae8db9fec6449a8bc896db27376a60a9d" kindref="member">muzzleFlashEffect</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_gun_1a5b8551dca000a8141e1d3e0fc4b13bdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ParticleSystem<sp/><ref refid="class_gun_1a5b8551dca000a8141e1d3e0fc4b13bdc" kindref="member">shellEjectEffect</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Transform<sp/><ref refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" kindref="member">fireTransform</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_gun_1adcb0024eec33ba6464c6b15b4805baf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Transform<sp/><ref refid="class_gun_1adcb0024eec33ba6464c6b15b4805baf9" kindref="member">leftHandMount</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_gun_1ac43918c974e6f366fb92b77252f2e054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1ac43918c974e6f366fb92b77252f2e054" kindref="member">damage</ref><sp/>=<sp/>25;</highlight></codeline>
+<codeline lineno="29" refid="class_gun_1a2f24745a0810a937385acf841a23b66b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a2f24745a0810a937385acf841a23b66b" kindref="member">fireDistance</ref><sp/>=<sp/>100f;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" kindref="member">ammoRemain</ref><sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="32" refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" kindref="member">magAmmo</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_gun_1a4102eca38dc877e833eea98acf75583c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a4102eca38dc877e833eea98acf75583c" kindref="member">magCapacity</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_gun_1a94863ab87426477ddfd21b9e591d610b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a94863ab87426477ddfd21b9e591d610b" kindref="member">timeBetFire</ref><sp/>=<sp/>0.12f;</highlight></codeline>
+<codeline lineno="36" refid="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" kindref="member">reloadTime</ref><sp/>=<sp/>1.8f;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[Range(0f,<sp/>10f)]<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" kindref="member">maxSpread</ref><sp/>=<sp/>3f;</highlight></codeline>
+<codeline lineno="39" refid="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[Range(1f,<sp/>10f)]<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" kindref="member">stability</ref><sp/>=<sp/>1f;</highlight></codeline>
+<codeline lineno="40" refid="class_gun_1a994623bce174aff950a9e6612345947a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[Range(0.01f,<sp/>3f)]<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a994623bce174aff950a9e6612345947a" kindref="member">restoreFromRecoilSpeed</ref><sp/>=<sp/>2f;</highlight></codeline>
+<codeline lineno="41" refid="class_gun_1a4073c1162e3b10885f64081122e747d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" kindref="member">currentSpreadVelocity</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" kindref="member">lastFireTime</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>LayerMask<sp/><ref refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" kindref="member">excludeTarget</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a4ce4b367ca74ecf930ce256d902a587b" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1abb0284f70c103c8c209942dce9b8bee0" kindref="member">gunAudioPlayer</ref><sp/>=<sp/>GetComponent&lt;AudioSource&gt;();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1abee2a510e8f443e86a62e246fb1b5d74" kindref="member">bulletLineRenderer</ref><sp/>=<sp/>GetComponent&lt;LineRenderer&gt;();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.positionCount<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.enabled<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a10ddc4df0ae89bd12f01d9fb70ab79ad" kindref="member">Setup</ref>(<ref refid="class_player_shooter" kindref="compound">PlayerShooter</ref><sp/><ref refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" kindref="member">gunHolder</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.gunHolder<sp/>=<sp/><ref refid="class_gun_1ac249ad5ebf055bf07047f16c8b69ad30" kindref="member">gunHolder</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" kindref="member">excludeTarget</ref><sp/>=<sp/>gunHolder.excludeTarget;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a6bc859722c423edf378924ac8449aa5f" kindref="member">OnEnable</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" kindref="member">magAmmo</ref><sp/>=<sp/><ref refid="class_gun_1a4102eca38dc877e833eea98acf75583c" kindref="member">magCapacity</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref><sp/>=<sp/>0f;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" kindref="member">lastFireTime</ref><sp/>=<sp/>0f;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>=<sp/>State.Ready;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_gun_1adba7bd46c2b16439942926818fd814f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1adba7bd46c2b16439942926818fd814f6" kindref="member">OnDisable</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StopAllCoroutines();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a940ab45d0ccfd7b1e3766b36e71b9a7a" kindref="member">Fire</ref>(Vector3<sp/>aimTarget)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>==<sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref>.Ready<sp/>&amp;&amp;<sp/>Time.time<sp/>&gt;=<sp/><ref refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" kindref="member">lastFireTime</ref><sp/>+<sp/><ref refid="class_gun_1a94863ab87426477ddfd21b9e591d610b" kindref="member">timeBetFire</ref>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>fireDirection<sp/>=<sp/>aimTarget<sp/>-<sp/>fireTransform.position;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>xError<sp/>=<sp/>Utility.GedRandomNormalDistribution(0f,<sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>yError<sp/>=<sp/>Utility.GedRandomNormalDistribution(0f,<sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fireDirection<sp/>=<sp/>Quaternion.AngleAxis(yError,<sp/>Vector3.up)<sp/>*<sp/>fireDirection;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fireDirection<sp/>=<sp/>Quaternion.AngleAxis(xError,<sp/>Vector3.right)<sp/>*<sp/>fireDirection;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref><sp/>+=<sp/>1f<sp/>/<sp/><ref refid="class_gun_1a4f606a170c05756a7e2ff20b5da68ac2" kindref="member">stability</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1ae6119a33df86624b68e203a975b7be8b" kindref="member">lastFireTime</ref><sp/>=<sp/>Time.time;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" kindref="member">Shot</ref>(<ref refid="class_gun_1afe6d36acf18d9becaba6ae348cd2f08f" kindref="member">fireTransform</ref>.position,<sp/>fireDirection);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1a3b87a61ccc84a7f7695c82795229fd97" kindref="member">Shot</ref>(Vector3<sp/>startPoint,<sp/>Vector3<sp/>direction)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RaycastHit<sp/>hit;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>hitPosition;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Physics.Raycast(startPoint,<sp/>direction,<sp/>out<sp/>hit,<sp/><ref refid="class_gun_1a2f24745a0810a937385acf841a23b66b" kindref="member">fireDistance</ref>,<sp/>~<ref refid="class_gun_1ab16d47a50a981f09ebc3eb3e39f714a1" kindref="member">excludeTarget</ref>))</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>target<sp/>=<sp/>hit.collider.GetComponent&lt;<ref refid="interface_i_damageable" kindref="compound">IDamageable</ref>&gt;();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(target<sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_damage_message" kindref="compound">DamageMessage</ref><sp/>damageMessage;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>damageMessage.damager<sp/>=<sp/>gunHolder.gameObject;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>damageMessage.amount<sp/>=<sp/><ref refid="class_gun_1ac43918c974e6f366fb92b77252f2e054" kindref="member">damage</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>damageMessage.hitPoint<sp/>=<sp/>hit.point;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>damageMessage.hitNormal<sp/>=<sp/>hit.normal;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.ApplyDamage(damageMessage);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EffectManager.Instance.PlayHitEffect(hit.point,<sp/>hit.normal,<sp/>hit.transform);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hitPosition<sp/>=<sp/>hit.point;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hitPosition<sp/>=<sp/>startPoint<sp/>+<sp/>direction<sp/>*<sp/><ref refid="class_gun_1a2f24745a0810a937385acf841a23b66b" kindref="member">fireDistance</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" kindref="member">ShotEffect</ref>(hitPosition));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" kindref="member">magAmmo</ref>--;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" kindref="member">magAmmo</ref><sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>=<sp/>State.Empty;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>IEnumerator<sp/><ref refid="class_gun_1aa4c01a280eca3747ae59c1be09660d47" kindref="member">ShotEffect</ref>(Vector3<sp/>hitPosition)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>muzzleFlashEffect.Play();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shellEjectEffect.Play();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gunAudioPlayer.PlayOneShot(<ref refid="class_gun_1ad9870f9245a45b44d828420e162695e3" kindref="member">shotClip</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.enabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.SetPosition(0,<sp/>fireTransform.position);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.SetPosition(1,<sp/>hitPosition);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForSeconds(0.03f);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bulletLineRenderer.enabled<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gun_1ac0ff9c679dd5f8f4c7eefa988ac6826d" kindref="member">Reload</ref>()</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>==<sp/><ref refid="class_gun_1aa89b5029ef97407fab497b5f485f18ef" kindref="member">State</ref>.Reloading<sp/>||<sp/>ammoRemain&lt;=<sp/>0<sp/>||<sp/>magAmmo<sp/>&gt;=<sp/><ref refid="class_gun_1a4102eca38dc877e833eea98acf75583c" kindref="member">magCapacity</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartCoroutine(<ref refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" kindref="member">ReloadRoutine</ref>());</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>IEnumerator<sp/><ref refid="class_gun_1ae8753dc968a445385a0b9b2214a2022d" kindref="member">ReloadRoutine</ref>()</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>=<sp/>State.Reloading;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gunAudioPlayer.PlayOneShot(<ref refid="class_gun_1a3dc241f8c27f9d0d00be3ede559f2868" kindref="member">reloadClip</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForSeconds(<ref refid="class_gun_1ab6e15b043530419b2a4c96b7d2c9a11a" kindref="member">reloadTime</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>ammoToFill<sp/>=<sp/>Mathf.Clamp(<ref refid="class_gun_1a4102eca38dc877e833eea98acf75583c" kindref="member">magCapacity</ref><sp/>-<sp/><ref refid="class_gun_1a39c8c7bbe60a2e843b003d03ebb25ab5" kindref="member">magAmmo</ref>,<sp/>0,<sp/><ref refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" kindref="member">ammoRemain</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>magAmmo<sp/>+=<sp/>ammoToFill;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a0e8248bfae9a95803ba33087c77b6080" kindref="member">ammoRemain</ref><sp/>-=<sp/>ammoToFill;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a203e03d9556efa1f55ea7be43d769307" kindref="member">state</ref><sp/>=<sp/>State.Ready;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref><sp/>=<sp/>Mathf.Clamp(<ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref>,<sp/>0f,<sp/><ref refid="class_gun_1aa00c0d1d74ad10f0c89481790f9984c4" kindref="member">maxSpread</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentSpread<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Mathf.SmoothDamp(<ref refid="class_gun_1a4073c1162e3b10885f64081122e747d3" kindref="member">currentSpread</ref>,<sp/>0f,<sp/>ref<sp/><ref refid="class_gun_1aca15aab4c225476b0daed50e9c2a24d3" kindref="member">currentSpreadVelocity</ref>,<sp/>1f<sp/>/<sp/><ref refid="class_gun_1a994623bce174aff950a9e6612345947a" kindref="member">restoreFromRecoilSpeed</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Gun.cs"/>
+  </compounddef>
+</doxygen>

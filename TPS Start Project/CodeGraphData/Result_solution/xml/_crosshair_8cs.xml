@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_crosshair_8cs" kind="file">
+    <compoundname>Crosshair.cs</compoundname>
+    <innerclass refid="class_crosshair" prot="public">Crosshair</innerclass>
+    <innernamespace refid="namespace_unity_engine_1_1_u_i">UnityEngine::UI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_crosshair" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_crosshair" kindref="compound">Crosshair</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_crosshair_1a0e17118ad9f228c4e9cf9dd2d571c3cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Image<sp/><ref refid="class_crosshair_1a0e17118ad9f228c4e9cf9dd2d571c3cf" kindref="member">aimPointReticle</ref>;</highlight></codeline>
+<codeline lineno="7" refid="class_crosshair_1af0422653665a712dfe4867420b134ff5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Image<sp/><ref refid="class_crosshair_1af0422653665a712dfe4867420b134ff5" kindref="member">hitPointReticle</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_crosshair_1a5852c7cad96276353f1a40725161b943" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_crosshair_1a5852c7cad96276353f1a40725161b943" kindref="member">smoothTime</ref><sp/>=<sp/>0.2f;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="class_crosshair_1afad37377723bea81c31228541c1ff0eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Camera<sp/><ref refid="class_crosshair_1afad37377723bea81c31228541c1ff0eb" kindref="member">screenCamera</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_crosshair_1aa207f60377444987b4756db4d677b9b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>RectTransform<sp/><ref refid="class_crosshair_1aa207f60377444987b4756db4d677b9b0" kindref="member">crossHairRectTransform</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Vector2<sp/><ref refid="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" kindref="member">currentHitPointVelocity</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Vector2<sp/><ref refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" kindref="member">targetPoint</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_crosshair_1acd999de367881dcea921c3829aabaa64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crosshair_1acd999de367881dcea921c3829aabaa64" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_crosshair_1afad37377723bea81c31228541c1ff0eb" kindref="member">screenCamera</ref><sp/>=<sp/>Camera.main;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_crosshair_1aa207f60377444987b4756db4d677b9b0" kindref="member">crossHairRectTransform</ref><sp/>=<sp/>hitPointReticle.GetComponent&lt;RectTransform&gt;();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_crosshair_1a193ae4ec32930449c26a7a7165c8e91c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crosshair_1a193ae4ec32930449c26a7a7165c8e91c" kindref="member">SetActiveCrosshair</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>active)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hitPointReticle.enabled<sp/>=<sp/>active;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aimPointReticle.enabled<sp/>=<sp/>active;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_crosshair_1a73821b11f7aaf11b0b2cc783d9d2c710" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crosshair_1a73821b11f7aaf11b0b2cc783d9d2c710" kindref="member">UpdatePosition</ref>(Vector3<sp/>worldPoint)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" kindref="member">targetPoint</ref><sp/>=<sp/>screenCamera.WorldToScreenPoint(worldPoint);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crosshair_1a281b74947fa743f691e877baa8d1e3c7" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_crosshair_1af0422653665a712dfe4867420b134ff5" kindref="member">hitPointReticle</ref>.enabled)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crossHairRectTransform.position<sp/>=<sp/>Vector2.SmoothDamp(crossHairRectTransform.position,<sp/><ref refid="class_crosshair_1a1021739862854b17ee79fded1fae8bb6" kindref="member">targetPoint</ref>,<sp/>ref<sp/><ref refid="class_crosshair_1acaae58da38a25a262f9fa48a520e0377" kindref="member">currentHitPointVelocity</ref>,<sp/><ref refid="class_crosshair_1a5852c7cad96276353f1a40725161b943" kindref="member">smoothTime</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/Crosshair.cs"/>
+  </compounddef>
+</doxygen>

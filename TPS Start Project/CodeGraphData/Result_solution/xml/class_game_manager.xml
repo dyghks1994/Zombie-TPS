@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game_manager" kind="class" prot="public">
+    <compoundname>GameManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_game_manager_1a7666e8468dac197b9eb32dd32128524f" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_game_manager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="5" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_game_manager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="7" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="20" endline="23">Awake</referencedby>
+        <referencedby refid="class_enemy_spawner_1a55c1ad24d5e41dd4d5a132631075c716" compoundref="_enemy_spawner_8cs" startline="52" endline="71">EnemySpawner.CreateEnemy</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">PlayerInput.Update</referencedby>
+        <referencedby refid="class_enemy_spawner_1a308cab115d1ecd6b69cc675b709de4a0" compoundref="_enemy_spawner_8cs" startline="24" endline="31">EnemySpawner.Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a71caa734a86fc2ab954c719133db4f39" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool GameManager.isGameover</definition>
+        <argsstring></argsstring>
+        <name>isGameover</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="18" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a645f69b6dd93ed7677c4bb86743c75c0" compoundref="_game_manager_8cs" startline="25" endline="32">AddScore</referencedby>
+        <referencedby refid="class_game_manager_1a0c10b4d89c6e37a4433a54a5b7b04500" compoundref="_game_manager_8cs" startline="34" endline="38">EndGame</referencedby>
+        <referencedby refid="class_player_input_1a6a20760e050710a284ec0e877164dea4" compoundref="_player_input_8cs" startline="16" endline="34">PlayerInput.Update</referencedby>
+        <referencedby refid="class_enemy_spawner_1a308cab115d1ecd6b69cc675b709de4a0" compoundref="_enemy_spawner_8cs" startline="24" endline="31">EnemySpawner.Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_manager_1ae9711122c3e5251d8f9ff4e02283af09" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="17" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a645f69b6dd93ed7677c4bb86743c75c0" compoundref="_game_manager_8cs" startline="25" endline="32">AddScore</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="20" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="20" bodyend="23"/>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="8">Instance</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_manager_1a645f69b6dd93ed7677c4bb86743c75c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.AddScore</definition>
+        <argsstring>(int newScore)</argsstring>
+        <name>AddScore</name>
+        <param>
+          <type>int</type>
+          <declname>newScore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="25" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="25" bodyend="32"/>
+        <references refid="class_game_manager_1a71caa734a86fc2ab954c719133db4f39" compoundref="_game_manager_8cs" startline="18">isGameover</references>
+        <references refid="class_game_manager_1ae9711122c3e5251d8f9ff4e02283af09" compoundref="_game_manager_8cs" startline="17">score</references>
+        <referencedby refid="class_enemy_spawner_1a55c1ad24d5e41dd4d5a132631075c716" compoundref="_enemy_spawner_8cs" startline="52" endline="71">EnemySpawner.CreateEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a0c10b4d89c6e37a4433a54a5b7b04500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.EndGame</definition>
+        <argsstring>()</argsstring>
+        <name>EndGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="34" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="34" bodyend="38"/>
+        <references refid="class_game_manager_1a71caa734a86fc2ab954c719133db4f39" compoundref="_game_manager_8cs" startline="18">isGameover</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" line="4" column="1" bodyfile="D:/Users/Administrator/Desktop/Unity_TPS/Unity-TPS-Sample/TPS Start Project/Assets/Scripts/GameManager.cs" bodystart="3" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_game_manager_1a645f69b6dd93ed7677c4bb86743c75c0" prot="public" virt="non-virtual"><scope>GameManager</scope><name>AddScore</name></member>
+      <member refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Awake</name></member>
+      <member refid="class_game_manager_1a0c10b4d89c6e37a4433a54a5b7b04500" prot="public" virt="non-virtual"><scope>GameManager</scope><name>EndGame</name></member>
+      <member refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Instance</name></member>
+      <member refid="class_game_manager_1a7666e8468dac197b9eb32dd32128524f" prot="private" virt="non-virtual"><scope>GameManager</scope><name>instance</name></member>
+      <member refid="class_game_manager_1a71caa734a86fc2ab954c719133db4f39" prot="public" virt="non-virtual"><scope>GameManager</scope><name>isGameover</name></member>
+      <member refid="class_game_manager_1ae9711122c3e5251d8f9ff4e02283af09" prot="private" virt="non-virtual"><scope>GameManager</scope><name>score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
